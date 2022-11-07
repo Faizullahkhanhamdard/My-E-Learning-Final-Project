@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page - CSAcademy</title>
+    <link rel="stylesheet" href="asset/css/html-course-pages-style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <main id="content-course-main-section">
+        <h1 id="content-course-main-section-title">ساختار تگ‌های HTML</h1>
+        <p>
+          تگ‌های HTML در دو حالت ارائه می‌شوند. تگ‌هایی که تگ بسته منحصر به فرد
+          دارند و تگ‌هایی که خودشان، خودشان را می‌بندند. هر کدام از تگ‌ها یک
+          فضای کاری دارند. یعنی در خود یکسری محتوا را قبول می‌کنند. برای مشخص
+          کردن مرز شروع و پایان تگ ما از تگ شروع و تگ پایان استفاده می‌کنیم. به
+          ساختار زیر دقت کنید:
+        </p>
+        <code> &lt;TagName&gt; Content &lt;/TagName&gt; </code>
+        <br />
+        <br />
+        <p>
+          تگ باز شدن با استفاده از علامت بزرگ و کوچک ریاضی <> و نام تگ
+          پیاده‌سازی می‌شود، همچنین تگ بستن با استفاده از همان موارد به اضافه یک
+          علامت Forward Slash قبل از نام تگ پیاده‌سازی می‌شود. در بین باز و بسته
+          شدن تگ نیز محتوا قرار می‌گیرد.
+          <br />
+          <br />
+          حالت دوم تگ‌ها، تگ‌هایی هستند که نیاز به تگ بستن ندارند. در واقع این
+          تگ‌ها خودشان به صورت خودکار بسته می‌شوند. به این تگ‌ها Self Closing
+          می‌گویند. در ادامه مطالب با این نوع تگ‌ها نیز آشنا خواهیم شد.
+        </p>
+            <div id="code-editor">
+              <p>کود من</p>
+            <code>
+                  &lt; !DOCTYPE html &gt; <br>
+                  &lt; html &gt;<br>
+                  &lt; head &gt; 
+                  &lt; title &gt;عنوان صفحه&lt; /title &gt;
+                  &lt; /head &gt;<br>
+                  &lt; body &gt; <br>
+                  &lt; h1 &gt;این یک عنوان است&lt; /h1 &gt; <br>
+                  &lt; p &gt;این یک پاراگراف است.&lt; /p &gt; <br>
+                  &lt; /body &gt;<br>
+                  &lt; /html &gt;
+            </code>
+            </div>
+        <p>
+          در کدهای بالا از خط دوم به بعد ما با ۴ تگ سر و کار داریم:<br />
+          &lt;HTML&gt;:تمام کدهای مربوط به فایل HTML در بین این تگ (تگ باز و تگ
+          بستن) قرار می‌گیرد.
+          <br />
+          &lt;Head&gt;: اطلاعاتی راجع به وبسایت را تحویل مرورگر، موتورهای
+          جستجوگر، بات‌ها و… می‌دهد. ما در ابتدا کمتر با این تگ سر و کار داریم.
+          المان‌های غیر بصری –غیر دیداری از چشم کاربر- در این قسمت قرار می‌گیرد.
+          <br />
+          &lt;Title&gt;: این تگ منحصرا باید در داخل &lt;head&gt; و &lt;/head&gt;
+          استفاده شود. محتوای بین این دو تگ، عنوان وبسایت را مشخص کرده و روی
+          تب‌های مرورگر قرار می‌دهد.
+          <br />
+          &lt;Body&gt;: این تگ بدنه وبسایت شما را تعیین می‌کند. در واقع هر چیزی
+          که بین این دو تگ استفاده شود در مرورگر به شما نمایش داده می‌شود.
+        </p>
+
+        <div class="quiz-wrapper">
+          <h1>سوالات HTML</h1>
+          <p class="quiz">
+            سوال ۴: کدام یکی از علامه های ذیل نمایانگر آخر یک تگ است؟
+          </p>
+          <form action="" class="options-wrapper">
+            <div class="single-option-wrapper">
+              <input type="radio" name="options" /><span>^</span>
+            </div>
+            <div class="single-option-wrapper">
+              <input type="radio" name="options" /><span>*</span>
+            </div>
+            <div class="single-option-wrapper">
+              <input type="radio" name="options" /><span>&lt;</span>
+            </div>
+            <div class="single-option-wrapper">
+              <input type="radio" name="options" /><span>/</span>
+            </div>
+          </form>
+        </div>
+        <div id="page-change-buttons">
+          <a href="html-paragraph-tag-page.html">پیش</a>
+          <a href="html-version-differences-page.html">عقب</a>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

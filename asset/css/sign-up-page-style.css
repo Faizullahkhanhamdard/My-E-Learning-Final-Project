@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+::placeholder{
+   color:rgb(191, 186, 186);
+   font-size: 16px;
+}
+.sign-up-page-container{
+    width:100vw;
+    height:100vh;
+    background-color: #254441;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.sign-up-page-container form{
+    padding: 70px 50px 40px 50px;
+    background-color: rgba(255,255,255,0.5);
+    width:400px;
+    height:auto;
+    border-radius: 5px;
+    position: relative;
+  
+}
+.sign-up-page-container form figure img{
+    border-radius: 50%;
+}
+.sign-up-page-container form figure{
+ position: absolute;
+ top:-35px;
+ left:170px;
+}
+.sign-up-page-container form .input-field-conainer{
+    margin-bottom: 10px;
+    
+}
+
+.sign-up-page-container form .input-field-conainer a{
+    margin-left: -5px;
+    display: inline-block;
+    width:40px;
+    /* height:35px; */
+    /* padding:0 0 9px 4px; */
+    line-height: 40px;
+    background-color: black;  
+   text-align: center;
+ 
+}
+.sign-up-page-container form .input-field-conainer a img{
+    width:40%;
+}
+
+.sign-up-page-container form .input-field-conainer input[type="text"],
+.sign-up-page-container form .input-field-conainer input[type="password"],
+.sign-up-page-container form .input-field-conainer input[type="email"]
+{
+    width:80%;
+    border:none;
+    outline:none;
+    background: none;
+    background-color: #254441;
+    padding: 13px 12px 12px 12px;
+    border-radius: 2px;
+    color:white;
+}
+.sign-up-page-container form .input-field-conainer input[type="checkbox"]{
+    border:none;
+    outline:none;
+    background: none;
+    background-color: #254441;
+}
+.sign-up-page-container form input[type="submit"]{
+    outline:none;
+    border:none;
+    background: none;
+    background-color: #254441;
+    padding: 7px 20px;
+    color:white;
+    cursor: pointer;
+}
+.sign-up-page-container form input[type="submit"]:hover{
+    background-color: #141d1c
+}
+.sign-up-page-container form #rememberme-text{
+    margin-right: 5px;
+    color:rgb(237, 233, 233);
+    
+
+}

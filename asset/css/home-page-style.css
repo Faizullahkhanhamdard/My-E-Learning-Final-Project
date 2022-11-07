@@ -1,0 +1,936 @@
+/* -----------------------  Default Styles---------- */
+@font-face {
+  font-family: bahij2;
+  src:url(../bahij/Bahij1.ttf);
+ 
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:bahij2;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.title{
+    font-size: 2.3rem;
+    color:#254441;
+    text-align: center;
+}
+::placeholder{
+    color:#A9a9a9;
+    font-size: 16px;
+   }
+.link-btn{
+    color:white;
+    padding:5px 30px;
+   background-color: #254441;   
+}
+.link-btn:hover{
+    color:white;
+   background-color: #3a6b66;
+}
+/* ---------------------Wrapper Class------------ */
+
+.wrapper{
+    width:100%;
+    background-color: #F0FFFF;
+}
+
+.bring-center{
+    text-align: center;
+}
+
+/* ----------------------------Header-section----------------------- */
+#header-section{
+  width:100%; 
+}
+.header-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:8vh;
+  padding: 0 10px;
+}
+
+#log-btn-container{
+  display:flex ;
+}
+
+.sign-in-btn {
+ margin-left:5px;
+}
+
+.login-btn a, .sign-in-btn a, .language-container a{
+  background-color: #254441;
+  color:white;
+  padding:2px 20px;
+  border-radius: 4px;
+}
+
+.login-btn a:hover, .sign-in-btn a:hover, .language-container a:hover{
+  color:white;
+  background-color: #3a6b66;
+}
+
+/* --------------------------Menu Bar section----------------- */
+.topnav {
+    overflow: hidden;
+    width: 100%;
+  }
+  .navbar-section{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    height:8.8vh;
+    background-color: #254441;
+  
+  }
+  .topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px 9px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    align-items: center;
+  }
+  
+  .logo-container{
+   width:150px;
+   height:8vh;
+  }
+
+  .logo-container img{
+    width:100%;
+    height:inherit;
+  }
+
+  .sticky{
+    position: sticky;
+    top:0;
+    left:0;
+    z-index: 2;
+    width:100%;
+  }
+
+  .topnav .icon {
+    display: none;
+  }
+  
+  .dropdown {
+    float: right;
+    overflow: hidden;
+  }
+ 
+  .dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 12px 16px 5px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: #254441;
+    min-width: 108px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropbtn img{
+    float:left;
+    width:12px;
+   padding-top: 12px;
+    margin-right: 8px;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: white;
+    border-bottom: 1px solid white;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+
+  .dropdown-content a:last-child{
+    border-bottom: none;
+  }
+ 
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #000;
+    color: white;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* -----------------Menu bar Section Responsive section--------- */
+ 
+  @media screen and (max-width: 600px) {
+    .navbar-section{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width:100%;
+      height:auto;
+      background-color: #254441;
+    }
+
+    .logo-container{
+      display: none;
+    }
+
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+
+    .topnav a.icon {
+      float: left; 
+      display: block;
+    }
+  
+    .topnav.responsive {
+      position: relative;
+    }
+
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    .topnav.responsive .dropdown {
+      float: none;
+    }
+
+    .topnav.responsive .dropdown-content {
+      position: relative;
+    }
+
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+
+    .dropdown-content{
+      background-color: #f2f2f2;
+    }
+
+    .dropdown-content a{
+      color:#000;
+      border-bottom:1px solid #254441;
+    }
+  }
+
+/* ------------------Heading section---------------------------------- */
+
+#heading-section{
+    text-align: center;
+    margin-top:30px;
+    margin-bottom: 10px;
+}
+
+#heading-section h1{
+    font-size: 4rem;
+    letter-spacing: 2px;
+}
+
+#search-bar-container input{
+  background: none;
+  border:none;
+  outline:none;
+  padding:5px;
+  width:200px;
+  margin-right: -6px;
+  border:1px solid gray;
+  border-radius: 3px;
+}
+
+.search-btn{
+      display: inline-block;
+      text-align: center;
+      padding:3px 10px 4px 10px; 
+      background-color: #254441;
+      color:white;
+}
+
+/* ------------------Contact section -------------------------------- */
+
+.contact-section{
+    width:100%;
+    margin: 50px auto;  
+    background-color: white; 
+    padding: 0 20px; 
+} 
+
+.contact-content-container{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-right-sidebar{
+width:55%;
+margin-left: 10px;
+}
+
+.contact-right-sidebar h3{ 
+   font-size: 2.2rem;
+   margin-bottom: 20px;
+}
+
+.contact-right-sidebar p{
+    font-size: 1.4rem;
+    word-spacing: 5px;
+    margin-bottom: 30px;    
+}
+
+.contact-link-container a{
+font-size: 20px;
+}
+
+.contact-btn{ 
+    color:#254441;;
+    display: inline-block;
+    padding: 4px 30px;
+    background-color: white;
+    border: 1px solid #254441;
+}
+
+.contact-btn:hover{
+    background-color:#254441;
+    color:white;
+}
+
+.contact-left-sidebar{
+    width: 40%;
+    text-align:left;
+}
+
+.contact-left-sidebar img{
+    width:100%;
+}
+  /* -----------------Contact Section Responsiveness For 750 px Size screen------------------- */
+@media all and (max-width:750px){
+
+  .contact-content-container{
+       display: flex;
+       flex-direction: column;
+  }
+  .contact-right-sidebar{
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-right-sidebar,.contact-left-sidebar{
+      width:100%;
+  }
+}
+      /* -----------------Contact section Responsiveness for max Width 440px----------------- */
+
+      @media all and (max-width:440px){
+       
+        .contact-section .contact-content-container{
+                   display: flex;
+                   flex-direction: column;
+                   align-items: center;
+              }
+              .contact-section .contact-content-container .contact-right-sidebar h3{
+               font-size: 2.1rem;
+              } 
+              .contact-section .contact-content-container .contact-right-sidebar p{
+               text-align: justify;
+              } 
+              .contact-section .contact-right-sidebar .contact-link-container{
+               display: flex;
+               flex-direction: column;
+   
+              }
+              .contact-section .contact-right-sidebar .contact-link-container a:first-child{
+               margin-bottom: 2px;
+              }
+       }
+/* -------------------------Video Courses section --------------------- */
+
+.course-show-section{
+ width:95%;
+ margin: 0 auto;
+}
+
+.item{
+    height:350px;
+    width:250px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 20px auto;
+    transition: box-shadow 0.5ms ;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .item img{
+    width:100px;
+    height:170px;
+  }
+
+  .item:hover{
+    box-shadow: 0 0 10px 0 gray;
+  }
+
+  .owl-carousel{
+    width:90%;
+    position: relative;
+    padding: 0 30px;
+  }
+
+  .btn-link{
+    padding:5px 30px;
+    background-color: #254441;
+    color:white;
+    display: inline-block;
+     margin-top: 5px;
+    text-decoration: none;
+  }
+ 
+  .owl-nav .owl-prev{
+    position: absolute;
+    top:150px;
+    right:0px;
+    font-size: 2.3rem!important;
+  }
+
+  .owl-nav .owl-next{
+    position: absolute;
+    top:150px;
+    left:0px;
+    font-size: 2.3rem !important;
+  }
+
+  .cards-container{
+    padding:5px 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;  
+  }
+
+  .cards-container span:first-child{
+    font-size: 1.4rem;
+    border-bottom:2px solid black;
+    padding: 2px;  
+  }
+
+  .cards-container span{
+    font-size: 1.3rem;
+    padding:2px 0 0 0;
+  }
+
+  .cards-container:last-child{
+    text-align: center;
+  }
+  
+/* ------------ Written Populor Courses Section------------- */
+
+.populor-courses-section{
+ width:100%;
+ /* background-color: #254441; */
+ background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/ba4.jpg);
+ background-position:center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ color:white;
+ padding: 30px 0 50px 0;
+ margin-top: 30px;
+}
+
+.populor-courses-section h3:first-child{
+    color:white;
+    padding-bottom: 20px;
+}
+
+.populor-courses-container{ 
+    width:90%;
+    height: inherit;
+   display: flex;
+   justify-content: space-between;
+   margin: 0 auto;
+}
+
+.populor-courses-container .populor-courses-parts{
+width:30%;
+}
+
+.populor-courses-parts img{
+    padding-bottom: 2px;
+    width:80px;
+    height:60px;    
+}
+
+.populor-courses-parts h3{
+    word-spacing: 3px;
+    font-size: 2rem;
+}
+
+.populor-courses-parts p{
+    margin-top: 5px;
+    text-align: justify;
+    font-size: 17px;
+   height:130px;
+   overflow: hidden;  
+}
+
+.populor-courses-parts a{
+    background-color: #F0FFFF;
+    color: #254441;
+    padding: 3px 20px;
+    font-size: 18px;    
+}
+
+.populor-courses-parts a:hover{
+    background-color: white;
+    color:#254441;
+}
+@media all and (max-width: 880px) {
+ /* ------------------Populor Courses section------- */
+
+ .populor-courses-section{
+  width:100%;
+}
+  .populor-courses-container{
+      display: flex;
+      flex-direction: column;
+      padding: 20px 0;
+     align-items: center;  
+     width:70%;
+  }
+.populor-courses-container  .populor-courses-parts{
+      margin-bottom: 70px;
+      width:100%;
+  }
+  } 
+
+/* --------------------------Instructors Section---------------- */
+
+.slideshow-container {
+    width:90%;
+    position: relative;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 5px;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #254441;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: #254441;
+    color:white;
+  }
+
+  .dots-wrapper .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px 10px 2px;
+    background-color: #254441;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .activated, .dots-wrapper .dot:hover {
+    background-color: #A9a9a9;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  .instructor-section{
+      width:90%;
+      margin: 0 auto 20px auto;
+  }
+  .instructor-section h2{
+    padding-bottom: 30px;
+      text-align: center;
+      font-size: 2.8rem;
+      color:black;
+  }
+
+  #instructor-container{
+     display: flex;
+     justify-content: space-between;    
+  }
+  
+  #instructor-content-container{
+  padding-right: 20px;
+  }
+
+  #instructor-content-container p{
+      font-size: 17px;
+      color:black;
+  }
+
+  #instructor-bio-container{
+  display: flex;
+  align-items: center;
+  }
+
+  .instructor-column{
+  display: flex;
+  width:45%;
+  }
+
+  #instructor-bio-container p{
+      font-size: 20px;
+      color:#254441;
+  }
+  
+  #instructor-bio-container h3{
+      font-size: 2rem;
+      padding-left: 10px;
+      color:#254441;
+  }
+
+  .instructor-image-container{
+   width:200px;
+   padding-left: 10px;
+  }
+
+  .instructor-image-container img{
+  width:90px;
+  /* border-radius: 70%; */
+  height:80px;
+  }
+
+  .instructor-info{
+    text-align: justify;
+  }
+
+   /*---- Resposiveness of Footer for max width 1080px screen------- */
+ @media all and (max-width:1080px){
+    
+  #instructor-bio-container{
+      display: flex;
+      flex-direction: column;
+      color:white;
+      }
+}
+  /* ---------------Instructor Section Responsive Part For Max width 880px---- */
+  @media screen and (max-width: 880px){
+    #instructor-container{
+      display: flex;
+      flex-direction: column
+    }
+
+    .instructor-column{
+      width:100%;
+      margin: 10px auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .instructor-image-container{
+     width:100%;
+     text-align: center;
+    }
+
+    #instructor-content-container p{
+       text-align: justify;
+    }
+  }
+
+    /* --------Instructor Section Responsive Part For Max width 340px---- */
+
+  @media screen and (max-width: 340px){
+    #instructor-bio-container{
+        text-align: center;
+    }
+
+    .instructor-section h2{
+     font-size: 2.3rem;
+    }
+
+  }
+
+  @media all and (max-width:1150px){
+    #instructor-bio-container{
+      display: flex;
+      flex-direction: column;
+    }
+    .instructor-info{
+      text-align: justify;
+
+    }
+    
+}
+  
+  
+/*--------------------------- Addmission-section------------------------- */
+
+.addmission-section{
+   background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/boys-with-computer.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width:100%;
+   padding: 100px 0;
+   text-align: center;
+   margin: 0 auto;
+ 
+}
+
+.addmission-content{
+    /* background-color: rgba(49, 47, 47, 0.7); */
+    background-color: rgba(255,255,255,0.2);
+    width:70%;
+    margin:0 auto;
+    padding:55px 30px;
+}
+
+.addmission-section p{
+  color:white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.addmission-section a{
+    padding: 10px 30px;
+    background-color: #254441;
+    color:white;
+    margin-top: 15px;
+    display: inline-block;
+    font-size: 17px;
+}
+
+.addmission-section a:hover{
+background-color:  #3a6b66;
+color:white;   
+}
+
+/*------------------------ Footer Section------------------------- */
+.footer-container{
+    background-color:#254441;;
+    width:100%;
+    padding:40px 0 0 0;
+    position: relative;
+}
+
+footer{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+footer #footer-first-row{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+footer #footer-first-row input{
+    background: none;
+    border:none;
+    outline:none;
+    border:1px solid white;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding:0 100px;
+    color: white;
+}
+
+footer #footer-first-row a{
+    background-color: white;
+    color:#254441;
+    width:75%;
+    display: inline-block;
+    border-radius: 20px;
+    position: relative;
+    left: 15px;
+    text-align: center;
+    padding:1px;
+}
+
+footer #footer-second-row{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+#footer-third-row-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer-third-row #line-bar span{
+    display: block;
+    border: 1px solid white;
+}
+
+#footer-third-row-content p{
+ color:white;
+ font-size: 1.2rem;
+}
+
+/* Academy Part */
+#academy-part{
+    flex-basis: 35%;
+}
+/* Learnig Part */
+#learning-part{
+    flex-basis: 20%;
+}
+/* About part */
+#about-part{
+    flex-basis: 20%;
+}
+/* More part */
+#more-part{
+    flex-basis: 25%;
+}
+/* Heading 3 of footer */
+
+footer div h3{
+    padding-bottom: 10px;
+    font-size: 1.6rem;
+    color:white;
+}
+
+/* Paragrpahs  of footer */
+ footer div a{
+    padding-bottom:10px;
+    font-size: 1.2rem;
+    display: block;
+    color:white;
+}
+/* Link-container */
+
+.link-container{
+    display: flex;
+    width:inherit;
+}
+
+.link-container img{
+    width:60px;
+    padding: 10px;
+    background-color: #254441;
+    color:white;
+    border-radius: 50%;
+}
+
+/* -------------Footer Section resonsivness For max width 750px------- */
+
+ @media all and (max-width:750px){
+   
+    #footer-second-row{
+       display: flex;
+       flex-direction: column;
+    }
+    #footer-second-row h3{
+      font-size: 2.5rem;
+    }
+
+    #academy-part,#learning-part,#about-part,#more-part{
+      margin-bottom: 10px;
+
+    }
+  
+}
+  
+ @media all and (max-width: 880px) {
+    
+       #footer-second-row #academy-part{
+          flex-basis: 25%;
+          margin-left: 20px;
+       }
+       #footer-second-row #learning-part,#footer-second-row #about-part{
+        margin-left: 20px;
+       }
+       #footer-third-row-content{
+        display: flex;
+        flex-direction: column;
+       }
+       #footer-third-row-content p{
+        margin-bottom: 10px;
+        text-align: center;
+       }
+       #footer-first-row a{
+        font-size: 0;
+        
+       }
+       #footer-first-row a::before,
+       #footer-first-row a::after{
+        font-size: 18px;
+       }
+       #footer-first-row a::after{
+        content:'یوتیوب';
+       }
+       #footer-first-row input{
+         width:80px;
+       }
+       .addmission-section{
+        padding:60px 0;
+       }
+      }
+   
+
+
+
+
+

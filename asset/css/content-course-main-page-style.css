@@ -1,0 +1,334 @@
+/* -----------------------  Default Styles---------- */
+@font-face {
+  font-family: bahij2;
+  src:url(../bahij/Bahij1.ttf);
+ 
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:bahij2;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+::placeholder{
+  color:#A9a9a9;
+  font-size: 16px;
+ }
+p,code,li{
+  font-size: 20px;
+}
+
+/* ---------------------Wrapper Class------------ */
+
+.wrapper{
+    width:100%;
+    /* background-color: #ffffff; */
+}
+
+/* --------------------------Menu Bar section----------------- */
+.navbar{
+width:100%;
+height: 8vh;
+background-color: #254441;
+padding: 0 20px;
+
+}
+.menu-wrapper{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  height:inherit;
+}
+#sidebar-menu-icon-wrapper{
+display: none;
+width:30px;
+padding-top: 10px;
+padding-left: 10px;
+}
+#sidebar-menu-icon-wrapper a img{
+  width:100%;
+}
+.navbar-container{
+   width:500px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+}
+.navbar-container li a:hover{
+  background-color: black;
+}
+
+.navbar-container li a{
+    width:100px;
+  color:white;
+  display: inline-block;
+  padding: 6px;
+  font-size: 20px;
+}
+.search-bar-wrapper form input{
+  width:200px;
+  padding: 3px;
+  margin-right: -4px;
+  background: none;
+  border:none;
+  outline:none;
+  border:1px solid white;
+}
+.search-bar-wrapper form a{
+  background-color:white;
+  color:#254441;
+  padding: 1px 5px 2px 3px;
+  
+}
+@media screen and (max-width:700px){
+    .navbar{
+        height:150px;
+    }
+    .menu-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 0;
+    }
+}
+    
+/* -----------Main Content right Side bar------------- */
+
+#content-course-main-section-wrapper{
+  display: flex;
+}
+#right-sidebar{
+    flex-basis: 18%;
+    background-color: #254441;
+    color:white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+  #right-sidebar ul{
+    list-style-type: none;
+  }
+  #right-sidebar ul li{
+    padding: 3px 20px 3px 0;
+
+  }
+  #right-sidebar ul li:hover{
+    background-color: black;
+  }
+  #right-sidebar ul li a{
+    color:white;
+    font-size: 20px;
+  }
+  .right-sidebar-section{
+    /* width:100px; */
+    padding: 10px 0;
+    text-transform: capitalize;
+    font-size: 25px;
+    background-color: black;
+    /* border-bottom: 1px solid white; */
+  }
+
+  /* .my-new-right-sidebar{
+    flex-basis: 18%;
+    background-color: #254441;
+    color:white;
+    border-top: 1px solid white;
+    padding-top: 10px;
+    position: absolute;
+    top:0;
+    right:-200px;
+  } */
+
+ 
+
+  #content-course-main-section-wrapper iframe{
+   min-height:120vh;  
+   border:none;
+   padding: 20px 50px 10px 0;
+   border:none;
+   flex-basis: 82%;
+   /* border:1px solid red; */
+  }
+  @media all and (max-width:1050px){
+    #right-sidebar{
+      display: none; 
+    }
+    #content-course-main-section-wrapper iframe{
+      flex-basis:100%;
+    
+    }
+    #sidebar-menu-icon-wrapper{
+      display: block;
+    }
+   
+  }
+/*------------------------ Footer Section------------------------- */
+.footer-container{
+    background-color:#254441;;
+    width:100%;
+    padding:40px 0 0 0;
+    position: relative;
+    clear: both;
+}
+
+footer{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+footer #footer-first-row{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+footer #footer-first-row input{
+    background: none;
+    border:none;
+    outline:none;
+    border:1px solid white;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding:0 100px;
+    color: white;
+}
+
+footer #footer-first-row a{
+    background-color: white;
+    color:#254441;
+    width:75%;
+    display: inline-block;
+    border-radius: 20px;
+    position: relative;
+    left: 15px;
+    text-align: center;
+    padding:1px;
+}
+
+footer #footer-second-row{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+#footer-third-row-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer-third-row #line-bar span{
+    display: block;
+    border: 1px solid white;
+}
+
+#footer-third-row-content p{
+ color:white;
+ font-size: 1.2rem;
+}
+
+/* Academy Part */
+#academy-part{
+    flex-basis: 35%;
+}
+/* Learnig Part */
+#learning-part{
+    flex-basis: 20%;
+}
+/* About part */
+#about-part{
+    flex-basis: 20%;
+}
+/* More part */
+#more-part{
+    flex-basis: 25%;
+}
+/* Heading 3 of footer */
+
+footer div h3{
+    padding-bottom: 10px;
+    font-size: 1.6rem;
+    color:white;
+}
+
+/* Paragrpahs  of footer */
+ footer div a{
+    padding-bottom:10px;
+    font-size: 1.2rem;
+    display: block;
+    color:white;
+}
+/* Link-container */
+
+.link-container{
+    display: flex;
+    width:inherit;
+}
+
+.link-container img{
+    width:60px;
+    padding: 10px;
+    background-color: #254441;
+    color:white;
+    border-radius: 50%;
+}
+
+/* -------------Footer Section resonsivness For max width 750px------- */
+
+ @media all and (max-width:750px){
+   
+    #footer-second-row{
+       display: flex;
+       flex-direction: column;
+    }
+    #footer-second-row h3{
+      font-size: 2.5rem;
+    }
+    #academy-part,#learning-part,#about-part,#more-part{
+      margin-bottom: 10px;
+    }
+}
+
+ @media all and (max-width: 880px) {
+    
+       #footer-second-row #academy-part{
+          flex-basis: 25%;
+          margin-left: 20px;
+       }
+       #footer-second-row #learning-part,#footer-second-row #about-part{
+        margin-left: 20px;
+       }
+       #footer-third-row-content{
+        display: flex;
+        flex-direction: column;
+       }
+       #footer-third-row-content p{
+        margin-bottom: 10px;
+        text-align: center;
+       }
+       #footer-first-row a{
+        font-size: 0;
+       }
+       #footer-first-row a::before,
+       #footer-first-row a::after{
+        font-size: 18px;
+       }
+       #footer-first-row a::after{
+        content:'یوتیوب';
+       }
+       #footer-first-row input{
+         width:80px;
+       }
+      }
+   
+
+  

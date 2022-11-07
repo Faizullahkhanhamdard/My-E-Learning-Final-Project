@@ -1,0 +1,175 @@
+/* -----------------------  Default Styles---------- */
+@font-face {
+  font-family: bahij2;
+  src:url(../bahij/Bahij1.ttf);
+ 
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:bahij2;
+}
+
+a{
+    text-decoration: none;
+}
+::placeholder{
+    color:#A9a9a9;
+    font-size: 16px;
+   }
+.link-btn{
+    color:white;
+    padding:5px 30px;
+   background-color: #254441;   
+}
+.link-btn:hover{
+    color:white;
+   background-color: #3a6b66;
+}
+/* ---------------------Wrapper Class------------ */
+
+.wrapper{
+    width:100%;
+    background-color: #ffffff;
+}
+
+.bring-center{
+    text-align: center;
+}
+p,code,li{
+  font-size: 20px;
+}
+  /* ------------------content-course-main-section----------- */
+  #content-course-main-section{
+    width:100%;
+    padding-left: 30px;
+    min-height: 100vh;
+  }
+  
+
+  #content-course-main-section #content-course-main-section-title{
+    color:#254441;
+  }
+
+  #content-course-main-section #course-defination{
+    width:400px;
+    text-align: center;
+    border-top:1px solid #254441;
+    border-bottom:1px solid #254441;
+  }
+  #content-course-main-section #code-editor p{
+    color:white;
+    background-color: #ababab;
+    padding: 6px 30px 6px 0;
+    text-align: right;
+    font-size: 22px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+  }
+  #content-course-main-section #code-editor{
+    margin: 20px 0;
+   background-color: #254441;
+   width:800px;
+   height:340px;
+   border-radius: 5px;
+   direction: ltr;
+   color:white;
+  
+  }
+
+  #content-course-main-section #code-editor code{
+    display: inline-block;
+    padding: 10px 0 10px 20px;
+  
+  }
+
+  #content-course-main-section #code-editor img{
+    width:760px;
+    height:280px;
+  }
+
+  #content-course-main-section #content-course-description{
+    text-align: justify;
+    font-size: 18px;
+  }
+
+  #content-course-main-section #content-course-description-title{
+    font-size: 30px;
+
+  }
+  #page-change-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+
+  }
+  #page-change-buttons a{
+    padding:5px 30px;
+    background-color: #254441;
+    color:white;
+    border-radius: 5px;
+  
+  }
+  #page-change-buttons a:hover{
+   
+    background-color: black;
+    color:white;
+  }
+
+.quiz-wrapper{
+  margin: 30px 0 50px 0;
+}
+.quiz-wrapper h1{
+  width:17%;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #254441;
+}
+
+.quiz-wrapper .quiz{
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.quiz-wrapper .options-wrapper .single-option-wrapper{
+width:80%;
+background-color: #254441;
+border-bottom: 1px solid white;
+padding:10px;
+
+
+}
+
+.quiz-wrapper .options-wrapper .single-option-wrapper:hover{
+  background-color: black;
+}
+
+.quiz-wrapper .options-wrapper .single-option-wrapper input{
+  width:35px;
+  height:15px;
+}
+.quiz-wrapper .options-wrapper .single-option-wrapper span{
+  font-size: 1.2rem;
+  color:white;
+}
+
+  @media all and (max-width:1050px) {
+    #content-course-main-section
+    {
+      width:100%;
+    }
+  }
+
+  /* ----------------------html-course-version-page-style---------- */
+  #content-course-main-section #html-course-version-page{
+  font-size: 2.1rem;
+  }
+  #content-course-main-section #html-course-version-page-course-defination{
+    width:600px;
+    border-top: 1px solid #254441;
+    border-bottom: 1px solid #254441;
+    text-align: center;
+  }
+
+ 

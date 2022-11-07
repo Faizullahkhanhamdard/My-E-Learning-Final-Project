@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page - CSAcademy</title>
+  <link rel="stylesheet" href="asset/css/html-course-pages-style.css">
+
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <main id="content-course-main-section">
+      <h1 id="content-course-main-section-title">تصاویر </h1>
+
+      <p>
+        گاهی یک تصویر می‌تواند بیشتر از هزاران کلمه ارزشمند باشد. این کاملا واقعیت دارد. جدای از این مفهوم، انسان‌های
+        امروزی علاقه بیشتری به تصاویر دارند تا متن! دلایل مختلفی می‌تواند پشت این قضیه باشد، اما واقعیت آن است که در حال
+        حاضر تنها شبکه‌های اجتماعی موفق هستند که امکانات چند رسانه‌ای را به کاربران‌شان می‌دهند. مثال‌های بسیاری از این
+        نوع وجود دارد که می‌توان به اینستاگرام و یوتیوب اشاره کرد
+      </p>
+      <br>
+
+      <h1 id="content-course-main-section-title">تگ img </h1>
+      <p>
+        در این جلسه آموزشی قصد داریم شما را با شیوه اضافه کردن تصاویر به صفحات وب آشنا سازیم. برای استفاده از تصاویر در
+        برگه‌های وب شما باید از تگ img در HTML استفاده کنید. به مثال زیر دقت نمایید.
+      </p>
+      <div id="code-editor">
+        <p>کود من</p>
+        <code>
+            &lt; !DOCTYPE html &gt; <br>
+            &lt; html &gt;<br>
+            &lt; head &gt; 
+            &lt; title &gt; لینک صفحه&lt; /title &gt;
+            &lt; /head &gt;<br>
+            &lt; body &gt; <br>
+            &lt img src="cat.jpeg"&gt &lt/img &gt
+            &lt; /body &gt;<br>
+            &lt; /html &gt;
+      </code>
+      </div>
+      <br>
+      <br>
+
+      <p>
+        با مشاهده کردن این مثال می‌توانیم متوجه شویم که img یک تگ Self Closing است،‌ به این معنا که تگی برای بسته شدن
+        ندارد. در کد بالا شما خاصیتی تحت عنوان src را می‌توانید مشاهده کنید. این خاصیت در واقع مخفف کلمه source است و
+        مقدار ورودی آن تعیین کننده عکسی است که می‌خواهید آن را نمایش دهید.
+        <br>
+        در این مثال ما تصویر dog.png را از آدرس جاری (آدرسی که فایل html و تصویر در کنار همدیگر در آن قرار دارند) به
+        عنوان ورودی src قرار داده‌ایم.
+        <br>
+        اگر تصویر ما در یک پوشه دیگر قرار داشت کافی‌ست به صورت زیر عمل کنید:
+      </p>
+      <div id="code-editor">
+        <p>کود من</p>
+        <code>
+            &lt; !DOCTYPE html &gt; <br>
+            &lt; html &gt;<br>
+            &lt; head &gt; 
+            &lt; title &gt; لینک صفحه&lt; /title &gt;
+            &lt; /head &gt;<br>
+            &lt; body &gt; <br>
+            &lt img src="/pics/cat.jpeg"&gt &lt/img &gt
+            &lt; /body &gt;<br>
+            &lt; /html &gt;
+      </code>
+      </div>
+      <br>
+      <br>
+      <p>
+        و اگر تصویر روی یک سرور قرار داشت و خواستید آن را نمایش دهید، کافی‌ست URL آن را قرار دهید:
+      </p>
+      <div id="code-editor">
+        <p>کود من</p>
+        <code>
+            &lt; !DOCTYPE html &gt; <br>
+            &lt; html &gt;<br>
+            &lt; head &gt; 
+            &lt; title &gt; لینک صفحه&lt; /title &gt;
+            &lt; /head &gt;<br>
+            &lt; body &gt; <br>
+            &lt img src="http://CSAcdemy.com/wp-content/uploads/2017/06/logo.png"&gt &lt/img &gt
+            &lt; /body &gt;<br>
+            &lt; /html &gt;
+      </code>
+      </div>
+      <br>
+      <br>
+      <p>
+        خاصیت دیگر بسیار مهمی که در تصاویر وجود دارد و باید از آن استفاده شود، خاصیت alt است. alt مخفف کلمه alternative
+        است و منظور از پیاده‌سازی این خاصیت این بوده که در صورت نبود تصویر چه متنی وجود داشته باشد. بیایید تصور کنیم که
+        آدرس dog.png اشتباه باشد و یا تصویر از آن آدرس حذف شده، در این صورت باید چکاری انجام داد؟ در این حالت باید یک
+        متن جایگزین را قرار دهیم.
+        اما خاصیت alt دو فایده دیگر نیز دارد، ۱- سئوی وبسایت و ۲- قابلیت‌ دسترسی‌پذیری
+
+      </p>
+
+      <h1 id="content-course-main-section-title">: سئو چیست؟ </h1>
+      <p>
+        سئو روندی است که شما در آن سعی می‌کنید وبسایت‌تان را برای موتورهای جستجوگر مانند Google بهینه‌سازی و معرفی کنید.
+      </p>
+      <br>
+
+      <h1 id="content-course-main-section-title">آشنایی با دسترسی‌پذیری در وب </h1>
+      <p>
+        به عنوان یک نکته و تکنیک در دنیای وب باید به صورت کوتاه شما را با دسترسی‌پذیری آشنا کنم. منظور از دسترسی‌پذیری
+        این است که همه افراد جامعه با هر گونه ناتوانی (نابینایی، ناشنوایی و…) بتوانند از وبسایت شما استفاده بکنند. اما
+        سوالی که پیش می‌آید این است که افراد نابینا چگونه می‌توانند از وبسایت شما استفاده بکنند؟ برنامه‌هایی وجود دارد
+        که Screen Reader نام دارند. این برنامه‌ها محتوای متنی داخل صفحات را برای افراد نابینا مطالعه می‌کنند و آن‌ها را
+        از اطلاعات موجود در صفحه آگاه می‌سازند. اما یک سوال دیگر! این نرم افزار محتوای تصاویر را چگونه به کاربر نابینا
+        انتقال می‌دهد؟ اینجا‌ست که alt فایده دوم خود را به ما نشان می‌دهد. برنامه Screen Reader در مواجه با یک تصویر به
+        سراغ متن alt می‌رود.
+        <br>
+        به همین دلایل باید متن alt بسیار مربوط به تصویر باشد. برای مثال اگر تصویر یک سگ را قرار می‌دهید نباید مقدار
+        خاصیت alt چیزی برابر با cat یا image1 باشد.
+        <br>
+        به مثال زیر توجه کنید:
+      </p>
+      <div id="code-editor">
+        <p>کود من</p>
+        <code>
+            &lt; !DOCTYPE html &gt; <br>
+            &lt; html &gt;<br>
+            &lt; head &gt; 
+            &lt; title &gt; لینک صفحه&lt; /title &gt;
+            &lt; /head &gt;<br>
+            &lt; body &gt; <br>
+            &lt img src="/pics/cat.jpeg"&gt alt="It is picture of cat" &lt/img &gt
+            &lt; /body &gt;<br>
+            &lt; /html &gt;
+      </code>
+      </div>
+      <br>
+      <br>
+      <h1 id="content-course-main-section-title">خاصیت Width و Height</h1>
+      <p>
+        برای تعیین کردن اندازه یک تصویر شما می‌توانید از CSS استفاده کنید، اما اگر به HTML دسترسی داشته باشید این کار
+        بسیار ساده‌تر انجام می‌شود. خاصیت‌های width و height به ما این قابلیت را می‌دهند تا بتوانیم اندازه تصاویر را
+        تغییر دهیم. به مثال زیر توجه کنید:
+      </p>
+      <div id="code-editor">
+        <p>کود من</p>
+        <code>
+            &lt; !DOCTYPE html &gt; <br>
+            &lt; html &gt;<br>
+            &lt; head &gt; 
+            &lt; title &gt; لینک صفحه&lt; /title &gt;
+            &lt; /head &gt;<br>
+            &lt; body &gt; <br>
+            &lt img src="/pics/cat.jpeg"&gt alt="It is picture of cat" width="200px" height="100px" &lt/img &gt
+            &lt; /body &gt;<br>
+            &lt; /html &gt;
+      </code>
+      </div>
+      <br>
+      <br>
+      <p>
+        اگر می‌خواهید این تغییر اندازه از طریق CSS انجام شود باید به صورت زیر عمل کنید:
+        <br>
+        یک تکنیک بسیار ساده برای تعیین کردن اندازه تصاویر این است که سعی کنید بجای مقدار دادن به هر دو خاصیت width و
+        height تنها به یک مورد از آن‌ها مقدار بدهید. اینگونه تصویر براساس یک مقیاس درست تغییر سایز می‌دهد.
+      </p>
+      <div id="code-editor">
+        <p>کود من</p>
+        <code>
+            &lt; !DOCTYPE html &gt; <br>
+            &lt; html &gt;<br>
+            &lt; head &gt; 
+            &lt; title &gt; لینک صفحه&lt; /title &gt;
+            &lt; /head &gt;<br>
+            &lt; body &gt; <br>
+            &lt img src="/pics/cat.jpeg"&gt alt="It is picture of cat" style="width:200px; height:100px" &lt/img &gt
+            &lt; /body &gt;<br>
+            &lt; /html &gt;
+      </code>
+      </div>
+      <br>
+      <br>
+      <h1 id="content-course-main-section-title">استفاده از تصاویر به عنوان لینک</h1>
+      <p>
+        در جلسه قبلی راجع به اینکه لینک چیست و چگونه می‌توان آن را در HTML پیاده‌سازی کنید صحبت کردیم. اما حال می‌خواهیم
+        یک تصویر را به یک لینک متصل کنیم. منظورمان این است که با کلیک روی تصویر، مرورگر ما را به یک صفحه ارجاع دهد. برای
+        مثال تصور کنید ما تصویر گوگل را در اختیار داریم و می‌خواهیم با کلیک روی آن به گوگل مراجعه شود:
+      </p>
+      <div id="code-editor">
+        <p>کود من</p>
+        <code>
+            &lt; !DOCTYPE html &gt; <br>
+            &lt; html &gt;<br>
+            &lt; head &gt; 
+            &lt; title &gt; لینک صفحه&lt; /title &gt;
+            &lt; /head &gt;<br>
+            &lt; body &gt; <br>
+            &lt a href=”https://google.com” &gt &lt img src=”google.png” /&gt &lt/a &gt
+            &lt; /body &gt;<br>
+            &lt; /html &gt;
+      </code>
+      </div>
+      <br>
+      <br>
+      <h1 id="content-course-main-section-title">نقشه‌های تصویری</h1>
+      <p>
+        تصور کنید که نقشه ایران را در اختیار دارید و همچنین یک لینک منحصر به فرد برای هر استان را در اختیار دارید. حال
+        تصور کنید که می‌خواهید کاربر وقتی روی هر استان کلیک کرد به آدرس مربوطه مثلا به وبسایت گلستان یا وبسایت کرمانشاه
+        برود، اما این در حالی‌ست که شما تنها یک تصویر را در اختیار دارید! چاره کار شما استفاده از تگ map است. تکنیکی که
+        ما در آن یک تصویر را به قطعاتی تقسیم کرده و هر قسمت از این قطعه‌ها را به یک مکان لینک می‌کنیم.
+        <br>
+        برای نشان دادن کدها در این حالت من تنها از یک مثال ساده‌تر استفاده می‌کنم چرا که نمی‌خواهم کدها بسیار پیچیده
+        شوند.
+        تصور کنید شما تصویر زیر را در اختیار دارید و می‌خواهید لینک‌های جداگانه‌ای را برای لپ‌تاپ، فنجان قهوه و موبایل
+        داشته باشید.
+
+      </p>
+      <br>
+      <img src="asset/images/workplace.jpg" alt="" width="500px" height="auto">
+      <p>
+        برای انجام چنین کاری ابتدا نیاز است که با سیستم مختصاتی آشنایی داشته باشید. یعنی بتوانید نقاطی که شئ مورد نظرتان
+        در آن قرار دارد را به دست بیاورید. به کدهای زیر دقت کنید:
+      </p>
+      <div id="code-editor">
+        <p>کود من</p>
+        <code>
+      &lt img src="workplace.jpg" alt="Workplace" usemap="#workmap" &gt
+      <br>
+      &lt
+       map name="workmap" &gt <br>
+      &lt area shape="rect" coords="34,44,270,350" alt="Computer"href="computer.htm" &gt <br>
+      &lt area shape="rect" coords="290,172,333,250" alt="Phone"href="phone.htm" &gt <br>
+      &lt area shape="circle" coords="337,300,44" alt="Coffee"href="coffee.htm" &gt
+      <br>
+      &lt /map &gt
+        </code>
+      </div>
+      <p>
+        حال بیایید این کدها را به صورت شفاف‌تر مشاهده کنیم.
+        <br>
+        <b>خط اول:</b> در خط اول ما یک تگ img را همراه با خاصیت src و alt قرار داده‌ایم. خاصیت usemap بیانگر شناسه تصویر
+        برای نقشه است. به این معنا که به یک نقشه می‌گوید که از کدام تصویر استفاده کند.
+        <br>
+        <b>خط دوم:</b> در این خط ما از تگ map استفاده کرده‌ایم. همراه با این تگ خاصیت name قرار گرفته که مشخص می‌کند از
+        چه تصویری برای نقشه استفاده نماید.
+        <br>
+        <b>خط سوم:</b> تگ area به ما کمک می‌کند تا نواحی که می‌خواهیم لینک پذیر باشند را تعیین کنیم. این تگ چندین خاصیت
+        دارد که در زیر آن‌ها را شرح می‌دهیم:
+        <br>
+        <b>Shape:</b>
+        شکل قسمتی که می‌خواهید لینک پذیر باشد را تعریف می‌کند. مقدار rect به عنوان مستطیل و مقدار circle به عنوان دایره
+        توسط مروگر شناخته می‌شود.
+        <br>
+        <b>Coords:</b> این مقدار بیانگر مختصات شئ ما در تصویر است. دو مقدار اول بیانگر بالا-چپ و دو مقدار بعدی بیانگر
+        پایین-راست هستند.
+        • alt و href نیز خاصیت‌هایی هستند که با آن‌ها به خوبی آشنایی داریم.
+      </p>
+      <br>
+      <br>
+      <div class="quiz-wrapper">
+        <h1>سوالات HTML</h1>
+        <p class="quiz">سوال ۱۰: کدام یکی ازکود های ذیل برای اضافه کردن عکس درست است؟</p>
+        <form action="" class="options-wrapper">
+          <div class="single-option-wrapper"><input type="radio" name="options"><span>&lt img
+              src="faiz.jpeg " &lt / img &gt </span></div>
+          <div class="single-option-wrapper"><input type="radio" name="options"><span>&lt img
+              url="faiz.jpeg " &lt / img &gt </span></div>
+          <div class="single-option-wrapper"><input type="radio" name="options"><span>&lt img
+              href="faiz.jpeg " &lt / img &gt </span></div>
+          <div class="single-option-wrapper"><input type="radio" name="options"><span>&lt img
+              source="faiz.jpeg " &lt / img &gt </span></div>
+        </form>
+      </div>
+      <div id="page-change-buttons">
+        <a href="css-recognation-page-in-html.html">پیش</a>
+        <a href="html-links-page.html">عقب</a>
+      </div>
+
+    </main>
+
+  </div>
+</body>
+
+</html>

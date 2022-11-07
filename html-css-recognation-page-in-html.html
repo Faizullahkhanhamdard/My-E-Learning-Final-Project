@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page - CSAcademy</title>
+    <link rel="stylesheet" href="asset/css/html-course-pages-style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <main id="content-course-main-section">
+        <h1 id="content-course-main-section-title">آشنایی مقدماتی با CSS</h1>
+        <p>
+          در جلسه قبل با دو تگ جدید Heading و hr به خوبی آشنا شدیم و همچنین راجع
+          به خاصیت‌ها و شیوه پیاده‌سازی آن‌ها در یک سند HTML حرف زدیم. در این
+          مطلب قصد داریم با قالب‌دهی متنی که از طریق HTML اعمال می‌شوند و همچنین
+          خاصیت Style آشنا شویم. در پایان نیز در رابطه با کامنت گذاری در HTML
+          آشنا خواهیم شد
+        </p>
+        <br />
+
+        <h1 id="content-course-main-section-title">قالب‌دهی متنی</h1>
+        <p>
+          قبل از اینکه در رابطه با قالب‌دهی متنی آشنا شویم نیاز است که به یک
+          مقوله بسیار مهم در رابطه با HTML آشنا شویم. برخی از تگ‌ها به سبک Block
+          ساخته شده‌اند و برخی دیگر به سبک inline. برای درک اینکه این دو مورد
+          دقیقا چه هستند باید به سراغ یک مثال برویم.
+        </p>
+        <br />
+        <div id="code-editor">
+          <p>کود من</p>
+          <code>
+            &lt; !DOCTYPE html &gt; <br />
+            &lt; html &gt;<br />
+            &lt; head &gt; &lt; title &gt;عنوان صفحه&lt; /title &gt; &lt; /head
+            &gt;<br />
+            &lt; body &gt; <br />
+            &lt; p &gt;این یک پاراگراف است.&lt; /p &gt; <br />
+            &lt; /body &gt;<br />
+            &lt; /html &gt;
+          </code>
+        </div>
+        <p>
+          حال این کدها را در یک سند HTML قرار داده و در مرورگر اجرا کنید. مشاهده
+          خواهید کرد که علارغم اینکه دو تگ h1 و h2 در یک خط نوشته شده‌اند اما در
+          خطوط مختلفی نمایش می‌یابند. این بدان دلیل است که h1 و h2 جزوی از
+          تگ‌های blocking هستند. به این مفهوم که با تعریف آن‌ها، هر تگ یک خط
+          کامل را در برگه وب به خود اختصاص می‌دهد. این موضوع بسیار مهمی است که
+          باید حتما به آن توجه داشته باشید. از طرفی دیگر همانطور که گفته شد برخی
+          تگ‌ها inline هستند، یعنی به همان مقداری که محتوا دارند فضا اشغال
+          می‌کنند. برای مثال تگ strong یکی از این تگ‌ها است. به کدهای زیر توجه
+          کنید
+        </p>
+        <br />
+        <div id="code-editor">
+          <p>کود من</p>
+          <code>
+            &lt;&nbsp;DOCTYPE html&nbsp!&gt;
+            <br />
+            &lt;html&gt;
+            <br />
+            &lt;body&gt; <br />
+            &lt h1 &gt &lt strong &gt Faizullah&lt/strong &gt &lt/h1&gt
+            <br />
+            &lt;/body&gt;<br />
+            &lt;/html&gt;
+          </code>
+        </div>
+        <br />
+        <br />
+        <p>
+          این کد را نیز در یک فایل html قرار داده و آن را در مرورگر اجرا نمایید.
+          چیزی که با آن مواجه خواهید شد قرار گیری تگ strong در خط مربوط به تگ p
+          است.
+          <br />
+          حال با درک این موضوع باید بگوییم که در زیر می‌توانید تگ‌های بسیاری را
+          مشاهده کنید که همگی آن‌ها جزوی از تگ‌های inline به شمار می‌روند. از
+          این تگ‌ها برای قالب‌دهی به متون HTML استفاده می‌شود.
+        </p>
+        <ul>
+          <li>• &lt b &gt – متن قوی</li>
+          <li>• &lt strong &gt – متن مهم</li>
+          <li>• &lt i &gt – متن کج</li>
+          <li>• &lt em &gt – متن تاکیدی</li>
+          <li>• &lt mark &gt – متن مارک شده</li>
+          <li>• &lt small &gt – متن کوچک</li>
+          <li>• &lt del &gt – متن حذف شده</li>
+          <li>• &lt ins &gt – متن وارد شده</li>
+          <li>• &lt sub &gt – متن زیرین</li>
+          <li>• &lt sup &gt – متن رویی</li>
+          <li>
+            می‌توانید این موارد را به صورت زیر در کدهای‌تان پیاده‌سازی بکنید:
+          </li>
+        </ul>
+        <br />
+        <div id="code-editor">
+          <p>کود من</p>
+          <code>
+            &lt p &gt این خط عادی است &lt /p &gt <br />
+            &lt b &gt این خط بولد است &lt /b &gt <br />
+            &lt em &gt این یک خط مهم است &lt /em &gt <br />
+            &lt i &gt این یک خط کج شده است &lt /i &gt <br />
+            &lt mark &gt این خط نشان داده شده است &lt /mark &gt <br />
+            &lt strong &gt این خط بسیار زیاد مهم است &lt /strong &gt <br />
+            &lt sub &gt این یک خط قاعده دار است &lt /sub &gt <br />
+            &lt sup &gt این یک خط توان دار است &lt /sup &gt <br />
+            &lt ins &gt این یک خط اضافه شده است &lt /ins &lt <br />
+            &lt del &gt این یک خط حذف شده است &lt /del &gt <br />
+          </code>
+        </div>
+
+        <h1 id="content-course-main-section-title">خاصیت Style</h1>
+        <p>
+          همانطور که در مطلب اول از این مجموعه اشاره کردم برای آراسته کردن یک
+          صفحه نیاز است که از CSS استفاده کنید. یکی از خاصیت‌های همگانی که در
+          HTML وجود دارد style نام دارد. این خاصیت به ما این امکان را می‌دهد که
+          به صورت مستقیم و inline از کدهای CSS استفاده کنیم. البته این جزوی از
+          سر فصل اصلی نیست و فقط قصد داریم که شما را با این خاصیت آشنا کنیم.
+          <br />
+          برای مثال بیایید فرض کنید که قصد داریم یک عنوان با رنگ زرد و یک عنوان
+          با رنگ قرمز را پیاده‌سازی بکنیم. برای اینکار می‌توانیم به صورت زیر عمل
+          نماییم:
+        </p>
+        <div id="code-editor">
+          <p>کود من</p>
+          <code>
+            &lt;&nbsp;DOCTYPE html&nbsp!&gt;
+            <br />
+            &lt;html&gt;
+            <br />
+            &lt;body&gt; <br />
+            &lt h1 style="color:#1f2f42"&gtفیض الله همدرد &lt/h1&gt
+            <br />
+            &lt;/body&gt;<br />
+            &lt;/html&gt;
+          </code>
+        </div>
+        <p>
+          همانطور که مشاهده می‌کنید ما از خاصیتی با نام style استفاده کرده‌ایم.
+          مقادیری که داخل این خاصیت قرار دارد براساس دستورات css نوشته شده است.
+          البته باید بگویم که نیازی نیست فعلا آن‌ها را درک بکنید همینقدر کافی‌ست
+          بدانید که با استفاده از این خاصیت می‌توانیم کدهای CSS بنویسیم.
+          <br />
+          البته قصد داریم چند مورد دیگر را نیز در این مطلب به شما نشان بدهیم.
+          <br />
+          با استفاده از مقدار background-color می‌توانید رنگ پس زمینه یک المان
+          را تغییر دهید.
+          <br />
+          Color به شما اجازه می‌دهد که رنگ خود متن را تغییر دهید.
+          <br />
+          Font-family و font-size هر کدام به نوبت به شما اجازه می‌دهند تا نوع و
+          اندازه فونت را تغییر دهید.
+          <br />
+          Text-align نیز قابلیت تغییر ترازبندی متون را به شما می‌دهد.
+        </p>
+        <div id="code-editor">
+          <p>کود من</p>
+          <code>
+            &lt body &gt; <br />
+            &lt h1 style="background-color:red;" &gt;Simple&lt/h1 &gt; <br />
+            &lt h1 style="color:red;" &gt;ساده&lt/h1 &gt; <br />
+            &lt h1 style="font-famil:Tahoma; &gt;رنگه&lt/h1 &gt; <br />
+            &lt h1 style="font-size: 20px;"&gt;ساد&lt/h1 &gt; <br />
+            &lt h1 style="text-align: center;" &gt;ساده&lt/h1 &gt; <br />
+            &lt /body &gt;<br />
+            &lt /html &gt;<br />
+          </code>
+        </div>
+
+        <div id="page-change-buttons">
+          <a href="html-images-page.html">پیش</a>
+          <a href="html-comments-page.html">عقب</a>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

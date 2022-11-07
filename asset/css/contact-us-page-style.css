@@ -1,0 +1,547 @@
+/* -----------------------  Default Styles---------- */
+@font-face {
+    font-family: bahij2;
+    src:url(../bahij/Bahij1.ttf);
+   
+  }
+  *{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+      font-family:bahij2;
+  }
+  
+  a{
+      text-decoration: none;
+  }
+  ul{
+      list-style-type: none;
+  }
+  .title{
+      font-size: 2.3rem;
+      color:#254441;
+      text-align: center;
+  }
+  ::placeholder{
+      color:#A9a9a9;
+      font-size: 16px;
+     }
+  .link-btn{
+      color:white;
+      padding:5px 30px;
+     background-color: #254441;   
+  }
+  .link-btn:hover{
+      color:white;
+     background-color: #3a6b66;
+  }
+  /* ---------------------Wrapper Class------------ */
+  
+  .wrapper{
+      width:100%;
+      background-color: #F0FFFF;
+  }
+  
+  .bring-center{
+      text-align: center;
+  }
+  
+  /* ----------------------------Header-section----------------------- */
+  #header-section{
+    width:100%; 
+  }
+  .header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:8vh;
+    padding: 0 10px;
+  }
+  
+  #log-btn-container{
+    display:flex ;
+  }
+  
+  .sign-in-btn {
+   margin-left:5px;
+  }
+  
+  .login-btn a, .sign-in-btn a, .language-container a{
+    background-color: #254441;
+    color:white;
+    padding:2px 20px;
+    border-radius: 4px;
+  }
+  
+  .login-btn a:hover, .sign-in-btn a:hover, .language-container a:hover{
+    color:white;
+    background-color: #3a6b66;
+  }
+  
+  /* --------------------------Menu Bar section----------------- */
+  .topnav {
+      overflow: hidden;
+      width: 100%;
+    }
+    .navbar-section{
+      display: flex;
+      justify-content: space-between;
+      width:100%;
+      height:8.8vh;
+      background-color: #254441;
+    
+    }
+    .topnav a {
+      float: right;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 20px 9px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      align-items: center;
+    }
+    
+    .logo-container{
+     width:150px;
+     height:8vh;
+    }
+  
+    .logo-container img{
+      width:100%;
+      height:inherit;
+    }
+  
+    .sticky{
+      position: sticky;
+      top:0;
+      left:0;
+      z-index: 2;
+      width:100%;
+    }
+  
+    .topnav .icon {
+      display: none;
+    }
+    
+    .dropdown {
+      float: right;
+      overflow: hidden;
+    }
+   
+    .dropdown .dropbtn {
+      font-size: 20px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 12px 16px 5px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+  
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      text-align: center;
+      background-color: #254441;
+      min-width: 108px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+  
+    .dropbtn img{
+      float:left;
+      width:12px;
+     padding-top: 12px;
+      margin-right: 8px;
+    }
+  
+    .dropdown-content a {
+      float: none;
+      color: white;
+      border-bottom: 1px solid white;
+      padding: 10px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+    }
+  
+    .dropdown-content a:last-child{
+      border-bottom: none;
+    }
+   
+    .topnav a:hover, .dropdown:hover .dropbtn {
+      background-color: #000;
+      color: white;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #000;
+      color: #fff;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    /* -----------------Menu bar Section Responsive section--------- */
+   
+    @media screen and (max-width: 600px) {
+      .navbar-section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:100%;
+        height:auto;
+        background-color: #254441;
+      }
+  
+      .logo-container{
+        display: none;
+      }
+  
+      .topnav a:not(:first-child), .dropdown .dropbtn {
+        display: none;
+      }
+  
+      .topnav a.icon {
+        float: left; 
+        display: block;
+      }
+    
+      .topnav.responsive {
+        position: relative;
+      }
+  
+      .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+  
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+  
+      .topnav.responsive .dropdown {
+        float: none;
+      }
+  
+      .topnav.responsive .dropdown-content {
+        position: relative;
+      }
+  
+      .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+      }
+  
+      .dropdown-content{
+        background-color: #f2f2f2;
+      }
+  
+      .dropdown-content a{
+        color:#000;
+        border-bottom:1px solid #254441;
+      }
+    }
+  
+
+
+
+  /*------------------ Contact us page---------------------- */
+  .contact-us-page{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/ba5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+}
+
+.contact-us-page h1{
+    text-align: center;
+    font-size: 2.3rem;
+    text-transform: capitalize;
+    color:white;
+    margin-bottom: 5px;
+
+}
+.contact-us-page p{
+    color:white;
+    word-spacing: 2px;
+    font-size: 18px;
+}
+.contact-us-page .contact-us-info{
+    text-align: center;
+}
+.icon-container{
+    width:50px;
+}
+.icon-container img{
+    width:70%;
+    height:50%;
+    border-radius: 50%;
+}
+.contact-us-address-container{
+       width:100%;
+       display: flex;
+       justify-content: space-evenly;
+       align-items: center;
+       padding-top: 20px;
+       
+}
+.contact-us-right-sidebar{
+      width:30%;
+      color:white;
+}
+.contact-us-left-sidebar{
+    width:25%;
+    background-color: white;
+
+    padding: 10px 15px;
+    color:black;
+}
+.contact-us-left-sidebar h2{
+    text-align: center;
+    
+}
+
+.contact-us-left-sidebar input[type="text"],.contact-us-left-sidebar input[type="email"],.contact-us-left-sidebar textarea{
+    background: none;
+    border:none;
+    outline:none;
+    border-bottom: 2px solid black;
+    width:100%;
+    padding: 10px 10px 5px 0;
+
+}
+
+.btn-container{
+  
+   padding: 5px;
+}
+.btn-container input[type="submit"]{
+    padding:7px 30px;
+    background: none;
+    outline:none;
+    border:none;
+    background-color: #254441;
+    color:white;
+    cursor: pointer;
+   
+}
+.btn-container input[type="submit"]:hover{
+    background-color: #252345;
+    
+}
+.contact-us-wrapper{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.contact-us-content-container p{
+    margin-top: 2px;
+    font-size: 20px;
+}
+.contact-us-content-container strong{
+    color:white;
+    font-size: 24px;
+}
+
+@media all and (max-width:1150px){
+  .contact-us-address-container{
+      display: flex;
+      flex-direction: column;
+  }
+  .contact-us-left-sidebar{
+      width:90%;
+
+  }
+  .contact-us-right-sidebar{
+      width:90%;
+      
+  }
+}
+  /*------------------------ Footer Section------------------------- */
+.footer-container{
+    background-color:#254441;;
+    width:100%;
+    padding:40px 0 0 0;
+    position: relative;
+}
+
+footer{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+footer #footer-first-row{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+footer #footer-first-row input{
+    background: none;
+    border:none;
+    outline:none;
+    border:1px solid white;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding:0 100px;
+    color: white;
+}
+
+footer #footer-first-row a{
+    background-color: white;
+    color:#254441;
+    width:75%;
+    display: inline-block;
+    border-radius: 20px;
+    position: relative;
+    left: 15px;
+    text-align: center;
+    padding:1px;
+}
+
+footer #footer-second-row{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+#footer-third-row-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer-third-row #line-bar span{
+    display: block;
+    border: 1px solid white;
+}
+
+#footer-third-row-content p{
+ color:white;
+ font-size: 1.2rem;
+}
+
+/* Academy Part */
+#academy-part{
+    flex-basis: 35%;
+}
+/* Learnig Part */
+#learning-part{
+    flex-basis: 20%;
+}
+/* About part */
+#about-part{
+    flex-basis: 20%;
+}
+/* More part */
+#more-part{
+    flex-basis: 25%;
+}
+/* Heading 3 of footer */
+
+footer div h3{
+    padding-bottom: 10px;
+    font-size: 1.6rem;
+    color:white;
+}
+
+/* Paragrpahs  of footer */
+ footer div a{
+    padding-bottom:10px;
+    font-size: 1.2rem;
+    display: block;
+    color:white;
+}
+/* Link-container */
+
+.link-container{
+    display: flex;
+    width:inherit;
+}
+
+.link-container img{
+    width:60px;
+    padding: 10px;
+    background-color: #254441;
+    color:white;
+    border-radius: 50%;
+}
+
+/* -------------Footer Section resonsivness For max width 750px------- */
+
+ @media all and (max-width:750px){
+   
+    #footer-second-row{
+       display: flex;
+       flex-direction: column;
+    }
+    #footer-second-row h3{
+      font-size: 2.5rem;
+    }
+
+    #academy-part,#learning-part,#about-part,#more-part{
+      margin-bottom: 10px;
+
+    }
+  
+}
+/* @media screen and (max-width: 640px) {
+    .slider-nav-button {
+      height: 40px;
+      width: 40px;
+    }
+    .slider-navlink {
+      height: 12px;
+      width: 12px;
+    }
+  } */
+
+  
+ @media all and (max-width: 880px) {
+    
+       #footer-second-row #academy-part{
+          flex-basis: 25%;
+          margin-left: 20px;
+       }
+       #footer-second-row #learning-part,#footer-second-row #about-part{
+        margin-left: 20px;
+       }
+       #footer-third-row-content{
+        display: flex;
+        flex-direction: column;
+       }
+       #footer-third-row-content p{
+        margin-bottom: 10px;
+        text-align: center;
+       }
+       #footer-first-row a{
+        font-size: 0;
+        
+       }
+       #footer-first-row a::before,
+       #footer-first-row a::after{
+        font-size: 18px;
+       }
+       #footer-first-row a::after{
+        content:'یوتیوب';
+       }
+       #footer-first-row input{
+         width:80px;
+       }
+       .addmission-section{
+        padding:60px 0;
+       }
+      }
+   

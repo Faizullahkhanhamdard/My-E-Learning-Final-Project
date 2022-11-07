@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page - CSAcademy</title>
+    <link rel="stylesheet" href="asset/css/html-course-pages-style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <main id="content-course-main-section">
+        <h1 id="content-course-main-section-title">ادیو چیست؟</h1>
+        <p>
+          قبل از HTML5، فایل‌های صوتی فقط در مرورگر با افزونه (مانند فلش) قابل
+          پخش بودند. عنصر audio HTML5 یک روش استاندارد برای جاسازی صدا در یک
+          صفحه وب را مشخص می کند.
+        </p>
+        <br />
+        <br />
+
+        <h1 id="content-course-main-section-title">چگونه کار می کند؟</h1>
+
+        <p>
+          ویژگی کنترل ها کنترل های صوتی مانند پخش، مکث و صدا را اضافه می کند.
+          عنصر source به شما امکان می دهد فایل های صوتی دیگری را که مرورگر ممکن
+          است از بین آنها انتخاب کند، مشخص کنید. مرورگر از اولین فرمت شناسایی
+          شده استفاده خواهد کرد. متن بین تگ‌های audio و audio فقط در مرورگرهایی
+          نمایش داده می‌شود که از عنصر audio پشتیبانی نمی‌کنند.
+        </p>
+        <br />
+        <br />
+
+        <div id="code-editor">
+          <p>کود من</p>
+          <code>
+                &lt;!DOCTYPE html&gt; <br>
+                &lt;html&gt; <br>
+                &lt;body&gt;
+                <br>
+                &lt; audio controls&gt; 
+                  &lt; source src="horse.ogg" type="audio/ogg"&gt;<br> 
+                  &lt; source src="horse.mp3" type="audio/mpeg"&gt; <br>
+                Your browser does not support the audio element.
+                &lt; /audio&gt; 
+                
+                &lt;/body&gt; <br>
+                &lt;/html&gt;
+        
+            </code>
+        </div>
+
+        <div class="quiz-wrapper">
+          <h1>سوالات HTML</h1>
+          <p class="quiz">سوال ۲۱:کدام یکی از عناصر ‌ذیل مربوط به ادیو است؟</p>
+          <form action="" class="options-wrapper">
+            <div class="single-option-wrapper">
+              <input type="radio" name="options" /><span>&lt sound &gt</span>
+            </div>
+            <div class="single-option-wrapper">
+              <input type="radio" name="options" /><span>&lt audio &gt</span>
+            </div>
+            <div class="single-option-wrapper">
+              <input type="radio" name="options" /><span>&lt mp3 &gt</span>
+            </div>
+          </form>
+        </div>
+        <div id="page-change-buttons">
+          <a href="html-multimedia-introduction-page.html">پیش</a>
+          <a href="html-multimedia-audio-page.html">عقب</a>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

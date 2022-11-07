@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page - CSAcademy</title>
+    <link rel="stylesheet" href="asset/css/html-course-pages-style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <main id="content-course-main-section">
+        <h1 id="content-course-main-section-title">تگ input</h1>
+        <p>
+          حال که تگ اصلی فرم را در صفحه وارد کردیم، نیاز است که تگ‌های input را
+          در بین تگ فرم قرار دهیم. تگ input می‌تواند ورودی‌های متفاوتی را برای
+          ما شکل دهد. برای کار با این تگ نیاز است که خاصیت type آن را مقدار دهی
+          بکنید. برای مثال به کد زیر دقت بکنید:
+        </p>
+        <div id="code-editor">
+          <p>کود من</p>
+          <code>
+            <br />
+            &lt form> Name: &lt input type="text" name="Name" &gt;<br />
+            Family: &lt input type="text" name="family" &gt;<br />
+            Age: &lt input type="number" name="age" &gt;<br />
+            &lt /form &gt;
+          </code>
+        </div>
+        <p>
+          همانطور که مشاهده کردید ما با یک مقدار به نام type سر و کار داریم که
+          من در اینجا مقدار آن را برابر با text قرار دادم. مقادیر مربوط به این
+          خاصیت را می‌توانید در زیر به صورت لیست شده مشاهده بکنید.
+        </p>
+        <ul List-style-type="square">
+          <li>Text</li>
+          <li>Range</li>
+          <li>Passwrod</li>
+          <li>Color</li>
+          <li>Date</li>
+          <li>Time</li>
+          <li>File</li>
+          <li>Email</li>
+          <li>Month</li>
+          <li>Week</li>
+          <li>Day</li>
+          <li>Tel</li>
+          <li>URL</li>
+          <li>Search</li>
+          <li>Submit</li>
+        </ul>
+
+        <p>
+          هر کدام از این ورودی‌ها کارایی‌های متفاوتی را ارائه می‌دهند. برای مثال
+          با استفاده از radio می‌توانید یکسری رادیو باتن بسازید. برای مثال در
+          فرم زیر می‌شود به خوبی از یک radio استفاده کرد:
+        </p>
+        <div id="code-editor">
+          <p>کود من</p>
+          <code>
+            <br />
+            &lt form> &lt h2&gt; What is your gender?&lt /h2&gt;<br />
+            &lt input type="radio" name="gender" value="Male"&gt; Male <br />
+            &lt input type="radio" name="gender" value="Female"&gt; Female
+            <br />
+            &lt /form&gt;
+          </code>
+        </div>
+
+        <p>
+          در این شکل از ورودی شما با یک سوال روبرو هستید که این سوال یکسری گزینه
+          به عنوان جواب دارد و در نهایت تنها یک جواب صحیح است. برای مثال شما چه
+          جنسیتی دارید محدود به زن یا مرد بودن می‌شود و یک فرد نمی‌تواند در حالت
+          عادی هر دو مورد باشد.
+          <br />
+          مقدار Value در تگ input بیانگر مقداری است که هر گزینه در خود دارد.
+          وقتی که با یک زبان بک-اند کار بکنید مقدار مربوط به هر گزینه از طریق
+          این خاصیت خوانده می‌شود. اما متن نمایشی خارج از input قرار می‌گیرد. به
+          عنوان یک نکته مهم نیز باید بگویم که input یک تگ self closing است،
+          بنابراین تگ بسته شدن ندارد!
+        </p>
+
+        <div class="quiz-wrapper">
+          <h1>سوالات HTML</h1>
+          <p class="quiz">سوال ۱۵:مشخصه ویک چه را مشخص می کند؟</p>
+          <form action="" class="options-wrapper">
+            <div class="single-option-wrapper">
+              <input type="radio" name="options" /><span>هفته</span>
+            </div>
+            <div class="single-option-wrapper">
+              <input type="radio" name="options" /><span>ماه</span>
+            </div>
+            <div class="single-option-wrapper">
+              <input type="radio" name="options" /><span>ماه و سال</span>
+            </div>
+            <div class="single-option-wrapper">
+              <input type="radio" name="options" /><span>هفته و سال</span>
+            </div>
+          </form>
+        </div>
+
+        <div id="page-change-buttons">
+          <a href="html-input-restriction-page.html">پیش</a>
+          <a href="html-form-page.html">عقب</a>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

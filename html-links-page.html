@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page - CSAcademy</title>
+  <link rel="stylesheet" href="asset/css/html-course-pages-style.css">
+
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <main id="content-course-main-section">
+      <h1 id="content-course-main-section-title"> لینک ها </h1>
+
+      <p>
+        لینک‌ها در HTML تحت عنوان Hyperlink یا ابر لینک شناخته می‌شوند. چرا بدینگونه است؟ دلیل این است که لینک‌ها در
+        HTML علاوه بر فایل می‌توانند به صفحات دیگر اشاره کنند. یعنی شما روی یک لینک کلیک می‌کنید و این لینک شما را به یک
+        صفحه html دیگر ارجاع می‌دهد. این کار باعث می‌شود که یک شبکه از لینک‌ها شکل بگیرد که ما آن را ابر لینک می‌نامیم.
+        <br>
+        برای پیاده‌سازی یک لینک ما از تگ a استفاده می‌کنیم. ساختار این تگ به صورت زیر است:
+
+      </p>
+      <br>
+
+      <h1 id="content-course-main-section-title">Href </h1>
+      <p>
+        یکی از خاصیت‌های تقریبا منحصر به فردی است که برای تگ‌هایی که نیاز به آدرس دهی دارند استفاده می‌شود. مقدار خاصیت
+        href برابر آن فایل و یا صفحه‌ای است که شما می‌خواهید کاربر با کلیک روی لینک به آن دسترسی پیدا کند.
+        <br>
+        <br>
+        هر متنی که در بین <a> و </a> قرار بگیرد به عنوان متن لینک شناخته می‌شود. کاربر در زمان کلیک روی آن به لینک متصل
+        می‌شود.
+        می‌توانید برای لینک‌های‌تان عنوان نیز در نظر بگیرید. عنوان به این معنا که کاربر قبل از کلیک روی لینک می‌تواند از
+        محتوای آن خبردار شود. این کار با استفاده از خاصیت title انجام می‌شود. به مثال زیر توجه کنید.
+
+      </p>
+      <br>
+      <div id="code-editor">
+        <p>کود من</p>
+      <code>
+            &lt; !DOCTYPE html &gt; <br>
+            &lt; html &gt;<br>
+            &lt; head &gt; 
+            &lt; title &gt; لینک صفحه&lt; /title &gt;
+            &lt; /head &gt;<br>
+            &lt; body &gt; <br>
+            &lt a href="https://CSAcdemy.com" title="Go To ACademy for learning HTML,CSS,JS and etc"&gt CSCademy &lt/a &gt
+            &lt; /body &gt;<br>
+            &lt; /html &gt;
+      </code>
+      </div>
+      <br>
+      <br>
+      <p>
+        این کد را اجرا کنید. حال قبل از کلیک روی متن تنها چند لحظه ماوس را روی لینک نگه دارید. در این حالت یک کادر برای
+        شما ظاهر می‌شود که حاوی متن مربوط به قسمت title است.
+        <br>
+        خاصیت title یک خاصیت منحصر به فرد نیست و تقریبا برای بیشتر تگ‌ها موجود است.
+      </p>
+      <br>
+
+      <h1 id="content-course-main-section-title">باز شدن لینک در پنجره‌های مختلف</h1>
+      <p>
+        لینک شما این قابلیت را دارد که به صورت‌های مختلفی باز شود. برای اینکار نیاز است که از خاصیت target استفاده کنید.
+        به مثال زیر توجه کنید:
+        <br>
+        حال کد بالا را اجرا کنید و روی لینک کلیک نمایید. در این حالت لینک شما در یک صفحه یا پنجره جدید باز می‌شود.
+      </p>
+      <br>
+      <div id="code-editor">
+        <p>کود من</p>
+      <code>
+            &lt; !DOCTYPE html &gt; <br>
+            &lt; html &gt;<br>
+            &lt; head &gt; 
+            &lt; title &gt; لینک صفحه&lt; /title &gt;
+            &lt; /head &gt;<br>
+            &lt; body &gt; <br>
+            &lt a href="https://CSAcdemy.com" title="Go To ACademy for learning HTML,CSS,JS and etc"target=" index.html" &gt CSCademy &lt/a &gt
+            &lt; /body &gt;<br>
+            &lt; /html &gt;
+      </code>
+      </div>
+      <br>
+      <br>
+      <ol>
+        <li>۱. _blank یکی از مقادیر است که باعث می‌شود لینک در صفحه جدیدی باز شود اما حالت‌های دیگری نیز وجود دارد که
+          می‌توانید در زیر آن‌ها را مشاهده کنید.</li>
+        <li>۲. _self: باعث می‌شود که لینک در همان تب باز شود. به صورت پیشفرض این مقدار فعال است.</li>
+        <li>۳. _parent: این مقدار باعث می شود که لینک در فریم مادر باز شود.</li>
+        <li>۴. _top: با استفاده از این مقدار، لینک در یک پنجره کاملا جدید باز می‌شود.</li>
+      </ol>
+      <br>
+      <br>
+      
+      <div class="quiz-wrapper">
+        <h1>سوالات HTML</h1>
+        <p class="quiz">سوال ۹: کدام یکی ازکود های ذیل برای ساختن لینک درست است؟</p>
+        <form action="" class="options-wrapper">
+          <div class="single-option-wrapper"><input type="radio" name="options"><span>&lt a &gt
+              https://www.csacademy.com &lt / a &gt </span></div>
+          <div class="single-option-wrapper"><input type="radio" name="options"><span>&lt a https://www.csacademy.com
+              &gt www.csacademy.com &lt / a &gt </span></div>
+          <div class="single-option-wrapper"><input type="radio" name="options"><span>&lt a name="
+              https://www.csacademy.com " &gt www.csacademy.com &lt / a &gt</span></div>
+          <div class="single-option-wrapper"><input type="radio" name="options"><span>&lt a url="
+              https://www.csacademy.com " &gt www.csacademy.com &lt / a &gt</span></div>
+        </form>
+      </div>
+      <div id="page-change-buttons">
+        <a href="html-images-page.html">پیش</a>
+        <a href="html-colors-page.html">عقب</a>
+      </div>
+
+    </main>
+
+  </div>
+</body>
+
+</html>

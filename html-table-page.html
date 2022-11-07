@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page - CSAcademy</title>
+    <link rel="stylesheet" href="asset/css/html-course-pages-style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <main id="content-course-main-section">
+        <h1 id="content-course-main-section-title">جدول</h1>
+        <p>
+          در جلسه قبل به صورت کامل تصاویر و خاصیت‌های آن را بررسی کردیم. در این
+          جلسه می‌خواهیم راجع به یکی دیگر از المان‌های مهم طراحی صفحات وب یعنی
+          جداول صحبت بکنیم.
+          <br />
+          باید بگویم که جدول‌بندی در بسیاری از وبسایت‌های شرکتی از المان‌های
+          بسیار مهم به شمار می‌رود. شرکت‌هایی که می‌خواهند به کاربران‌شان فاکتور
+          یا آمار مختلف را نشان دهند، بیشتر از هر زمانی به جداول نیاز دارند.
+          <br />
+          ممکن است راه‌های متفاوتی برای ساخت جداول وجود داشته باشد اما راه
+          استانداردی که باید رفت بهترین راه است. به همین دلیل امروز قصد داریم یک
+          راه بسیار ساده و البته استاندارد برای ساخت جداول را به شما نشان دهیم.
+        </p>
+
+        <br />
+        <h1 id="content-course-main-section-title">پیاده‌سازی جدول در HTML</h1>
+        <p>
+          برای ساخت جدول در HTML شما به چهار تگ اصلی نیاز دارید:
+          <br />
+          <strong>Table:</strong> اولین و مهمترین تگ برای ساخت جدول که محدوده
+          پیاده‌سازی یک جدول را تعریف می‌کند.
+          <br />
+          <strong>Tr:</strong> با استفاده از این تگ می‌توانید ردیف‌های جدول‌تان
+          را تعریف کنید. این تگ مخفف Table row است.
+          <br />
+          <strong>Th:</strong> عناوین هر کدام از ردیف‌ها را مشخص می‌کند. این تگ
+          مخفف Table heading است.
+          <br />
+          <strong>Td:</strong> این تگ داده‌های مربوط به هر کدام از سلول‌ها را
+          وارد می‌کند. این تگ مخفف Table Data است.
+          <br />
+          ممکن است با این تعاریف کمی گیج شده باشید اما باید بگویم که با حل یک
+          مثال ساده کاملا مشکل‌تان حل می‌شود.
+          <br />
+          تصور کنید من یک جدول نیاز دارم که بتوانم در آن اطلاعات چند نفر (نام،
+          نام خانوادگی و سن) را وارد کنم. برای این کار نیاز به سه عنوان دارم.
+          همچنین از آنجایی که تنها اطلاعات دو نفر را وارد می‌کنم پس به دو ردیف
+          نیز نیاز دارم. اما یک ردیف نیز برای قرار دادن عناوین باید بگذارم، به
+          همین دلیل تعداد ردیف‌های من یا بهتر بگویم تعداد استفاده‌های من از تگ
+          tr به سه مورد می‌رسد.
+          <br />
+          <br />
+          یک سند html را آماده کنید و المان‌های اصلی html را وارد کنید:
+        </p>
+        <div id="code-editor">
+          <p>کود من</p>
+          <code>
+            &lt !DOCTYPE html &gt;<br />
+            &lt html &gt <br />
+            &lt body &gt <br />
+            &lt table &gt <br />
+            &lt tr &gt &lt th &gt Name:&lt /th &gt &lt th &gt Family:&lt /th &gt
+            &lt th &gt Age:&lt /th &gt &lt /tr &gt <br />
+
+            &lt tr &gt &lt td &gt Arastoo&lt /td &gt &lt td &gt Abasi&lt /td &gt
+            &lt td &gt 150&lt /td &gt &lt /tr &gt <br />
+            &lt /table &gt &lt /body &gt <br />
+            &lt /html &gt <br />
+          </code>
+        </div>
+        <p>
+          به این صورت من توانستم یک جدول داشته باشم که حاوی عناوین نام،‌ نام
+          خانوادگی و سن است، همچنین یک ردیف دیگر نیز با اطلاعات مرتبط را داراست.
+          اما یک لحظه صبر کنید.
+          <br />
+          جداول نیاز به خط کشی -بوردر- ندارند؟ چرا که نه، جدول بدون بوردر که
+          جدول نمی‌شود. برای پیاده‌سازی این قسمت ما از خاصیت border استفاده
+          می‌کنیم. این خاصیت متعلق به table است. به مثال زیر توجه کنید:
+          <br />
+          &lt table border="1" &gt
+        </p>
+
+        <h1 id="content-course-main-section-title">
+          افزودن عنوان اصلی برای جدول
+        </h1>
+        <p>
+          می‌توان یک متن منحصر به فرد را به جدول‌تان اضافه کنید که نشان‌دهنده
+          عنوان آن باشد. برای مثال بگوید که این جدول لیست کارمندان همراه با
+          مشخصات‌شان است. برای اینکار کافی‌ست که از تگ caption در داخل table
+          استفاده کنید. به مثال زیر دقت کنید:
+        </p>
+        <code>
+          &lt table &gt <br />
+          &lt caption>Monthly savings &lt /caption &gt <br />
+          &lt /table &gt
+        </code>
+        <br />
+        <br />
+
+        <h1 id="content-course-main-section-title">تخصیص ردیف و ستون بیشتر</h1>
+        <p>
+          با استفاده از این تکنیک می‌توانید برای هر کدام از سلول‌های‌تان ردیف و
+          یا ستون‌های بیشتری تخصیص بدهید. برای مثال بگویید که عنوان name به
+          اندازه دو ردیف جا بگیرد. یا بگویید که مقدار Arastoo به اندازه دو ستون
+          در کنار یکدیگر جا بگیرد. برای این کار کافی‌ست که از خاصیت‌های rowspan
+          برای تگ th و colspan برای td استفاده کنید. به مثال زیر توجه کنید:
+        </p>
+        <div id="code-editor">
+          <p>کود من</p>
+          <code>
+            &lt table border="1" &gt <br />
+            &lt tr &gt &lt th>نام:&lt /th &gt &lt th rowspan="2" &gt فامیل:&lt
+            /th &gt &lt th>عمر:&lt /th &gt &lt /tr &gt
+            <br />
+
+            &lt tr> &lt td colspan="2" &gtفیض الله &lt /td &gt &lt td>همدرد &lt
+            /td &gt &lt td>۲۳&lt /td &gt &lt /tr &gt <br />
+            &lt /table &gt
+          </code>
+        </div>
+
+        <div class="quiz-wrapper">
+          <h1>سوالات HTML</h1>
+          <p class="quiz">سوال ۱۲:کدام یکی از عناصر ‌ذیل مربوط جدول است؟</p>
+          <form action="" class="options-wrapper">
+            <div class="single-option-wrapper">
+              <input type="radio" name="options" /><span
+                >&lt table &gt; &lt tr &gt; &lt td &gt;</span
+              >
+            </div>
+            <div class="single-option-wrapper">
+              <input type="radio" name="options" /><span
+                >&lt thead &gt &lt body &gt; &lt tr &gt;
+              </span>
+            </div>
+            <div class="single-option-wrapper">
+              <input type="radio" name="options" /><span
+                >&lt table &gt &lt tfoot &gt; &lt head &gt;</span
+              >
+            </div>
+            <div class="single-option-wrapper">
+              <input type="radio" name="options" /><span
+                >&lt table &gt &lt tr &gt; &lt tt &gt;</span
+              >
+            </div>
+          </form>
+        </div>
+        <div id="page-change-buttons">
+          <a href="html-lists-page.html">پیش</a>
+          <a href="html-comments-page.html">عقب</a>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

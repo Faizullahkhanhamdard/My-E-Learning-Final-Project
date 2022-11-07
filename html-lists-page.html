@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page - CSAcademy</title>
+    <link rel="stylesheet" href="asset/css/html-course-pages-style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <main id="content-course-main-section">
+        <h1 id="content-course-main-section-title">لیست</h1>
+        <p>
+          در آموزش قبلی ما به صورت کامل با جداول و شیوه استفاده از آن‌ها آشنا
+          شدیم. حال در این قسمت از آموزش‌های وبسایت آموزش تک قصد داریم شما را با
+          پیاده‌سازی لیست در یک سند HTML آشنا کنیم.
+          <br />
+          تصور کنید که می‌خواهید یک لیست خرید را در صفحه وب‌تان قرار بدهید. برای
+          اینکار می‌توانید چندین تگ p را در چندین خط مختلف قرار داده و محتوا را
+          در بین آن‌ها وارد کنید. اما این کار چندان منطقی نیست، به این خاطر که
+          ما ظاهری مانند یک لیست را دریافت نخواهیم کرد. برای همین موضوع ما نیاز
+          داریم که از تگ‌های ساخت لیست در HTML یعنی ul و ol استفاده کنیم.
+        </p>
+
+        <br />
+        <h1 id="content-course-main-section-title">تفاوت تگ UL و OL</h1>
+        <p>
+          اگر با نرم افزاری مانند ورد یا لیبره آفیس کار کرده باشید مطمئنا با
+          لیست‌ها نیز آشنایی دارید. در دنیای متون ما دو نوع از لیست‌ها را در
+          اختیار داریم:
+          <br />
+          لیست‌های مرتب یا Ordered List
+          <br />
+          لیست‌های نامرتب یا Unordered List
+          <br />
+          تفاوت این دو حالت بسیار ساده است. در لیست‌های مرتب آیتم‌ها براساس یک
+          حالت ترتیبی نوشته می‌شوند. منظور از حالت ترتیبی این است که المانی برای
+          شمارش آیتم‌های لیست قرار داده می‌شود. برای مثال:
+        </p>
+        <ul>
+          <li>۱- تخم مرغ</li>
+          <li>۲- سیب زمینی</li>
+          <li>۳- پیاز</li>
+        </ul>
+        <ol>
+          <li>آ) جوراب)</li>
+          <li>ب) شلوار)</li>
+          <li>پ) کلاه)</li>
+        </ol>
+        <br />
+        <div id="code-editor">
+          <p>کود من</p>
+          <code>
+            &lt ol> <br />
+            &lt li &gt Orange&lt /li &gt <br />
+            &lt li &gt Apple&lt /li &gt <br />
+            &lt li &gt Banana&lt /li &gt <br />
+            &lt /ol>
+            <br />
+          </code>
+        </div>
+        <p>
+          می‌توانید شیوه نمایش لیست‌ها را از نظر اعداد و کاراکترها تغییر بدهید.
+          برای این کار کافی‌ست از خاصیت type بهره بگیرید. به مثال زیر توجه کنید:
+        </p>
+        <div id="code-editor">
+          <p>کود من</p>
+          <code>
+            &lt ol type="A" &gt <br />
+            &lt li &gt Orange&lt /li &gt <br />
+            &lt li &gt Apple&lt /li &gt <br />
+            &lt li &gt Banana&lt /li &gt <br />
+            &lt /ol &gt
+          </code>
+        </div>
+        <br />
+        <br />
+
+        <h1 id="content-course-main-section-title">لیست‌های تعریفی</h1>
+        <p>
+          با استفاده از لیست‌های تعریفی شما این قابلیت را پیدا خواهید کرد که
+          برای هر کدام از آیتم‌ها یک تعریف بنویسید. به مثال زیر توجه کنید:
+        </p>
+        <div id="code-editor">
+          <p>کود من</p>
+          <code>
+            &lt dl list-style-type="square" &gt <br />
+            &lt dt &gt Coffee&lt /dt &gt <br />
+            &lt dd &gt - black hot drink&lt /dd &gt <br />
+            &lt dt &gt Milk&lt /dt &gt <br />
+            &lt dd &gt - white cold drink&lt /dd &gt <br />
+            &lt /dl &gt
+          </code>
+        </div>
+        <p>
+          از dl به عنوان تگ شروع کننده لیست‌های تعریفی استفاده می‌شود. سپس برای
+          هر عنوان یا بهتر است بگوییم هر آیتم از یک dt بهره می‌گیریم. برای
+          افزودن توضیحات به هر آیتم نیز از dd استفاده می‌کنیم.
+        </p>
+
+        <div class="quiz-wrapper">
+          <h1>سوالات HTML</h1>
+          <p class="quiz">سوال ۱۳:لست منظم چگونه ساخته می شود؟</p>
+          <form action="" class="options-wrapper">
+            <div class="single-option-wrapper">
+              <input type="radio" name="options" /><span>&lt list &gt</span>
+            </div>
+            <div class="single-option-wrapper">
+              <input type="radio" name="options" /><span>&lt ol &gt </span>
+            </div>
+            <div class="single-option-wrapper">
+              <input type="radio" name="options" /><span>&lt ul &gt</span>
+            </div>
+            <div class="single-option-wrapper">
+              <input type="radio" name="options" /><span>&lt dl &gt </span>
+            </div>
+          </form>
+        </div>
+        <div id="page-change-buttons">
+          <a href="html-unorderd-list-page.html">پیش</a>
+          <a href="html-table-page.html">عقب</a>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

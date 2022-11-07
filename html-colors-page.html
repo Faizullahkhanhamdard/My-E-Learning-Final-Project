@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page - CSAcademy</title>
+  <link rel="stylesheet" href="asset/css/html-course-pages-style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <main id="content-course-main-section">
+      <h1 id="content-course-main-section-title">سیستم رنگ‌بندی</h1>
+      <p>
+        در جلسه قبل با خاصیت Style به خوبی آشنا شدیم و همچنین توانستیم که از
+        ابزارهای قالب‌دهی متون استفاده کنیم. کامنت گذاری را نیز به خوبی یاد
+        گرفتیم.
+        <br />
+        اما حال نیاز است که یاد بگیریم چگونه از سیستم رنگ‌بندی HTML استفاده
+        کنیم و همچنین با لینک‌ها آشنا شویم
+        <br />
+        سیستم رنگ‌بندی در HTML در HTML راه‌های مختلفی برای استفاده از رنگ‌ها
+        وجود دارد. در این مطلب قصد داریم با سه روش آشنا شویم.
+      </p>
+      <br />
+      <ol>
+        <li>۱. نام رنگ‌ها</li>
+        <li>۲. استفاده از سیستم Hexadecimal</li>
+        <li>۳. استفاده از RGB</li>
+      </ol>
+      <br />
+      <h1 id="content-course-main-section-title">نام رنگ‌ها</h1>
+      <p>
+        یک روش ساده اما بسیار محدود برای سیستم رنگ‌بندی استفاده از نام رنگ‌ها
+        است. به این صورت که اگر شما به رنگ قرمز نیاز داشته باشید کافی‌ست نام
+        آن را بنویسید: red. به کدهای زیر دقت کنید:
+        <br />
+        همانطور که می‌بینید من از نام رنگ قرمز برای مقدار دهی color استفاده
+        کردم. اما این سیستم بسیار محدود است. چرا؟! پاسخ بسیار ساده است. تصور
+        کنید که من یک رنگ قرمز را می‌خوام که میزان غلظت رنگی آن کم باشد، خب در
+        این صورت من باید از چه اسمی استفاده کنم؟ آیا چنین نامی را داریم؟ جواب
+        خیر است.
+      </p>
+      <br />
+      <div id="code-editor">
+        <p>کود من</p>
+        <code>
+            &lt;&nbsp;DOCTYPE html&nbsp!&gt;
+            <br />
+            &lt;html&gt;
+            <br />
+            &lt;body&gt; <br />
+            &lt h1 style="color:red"&gt فیض الله همدرد &lt/h1&gt
+            <br />
+            &lt;/body&gt;<br />
+            &lt;/html&gt;
+          </code>
+      </div>
+      <br />
+      <br />
+
+      <h1 id="content-course-main-section-title">Hexadecimal</h1>
+      <p>
+        هگزادسیمال یا سیستم ۱۶ تایی اعداد به ما این قابلیت را می‌دهد تا کمی
+        بیشتر از ۶ میلیون رنگ را استفاده کنیم. استفاده از این سیستم بسیار ساده
+        است. در یک سیستم ۱۶تایی از اعداد ما با اعداد ۰ تا ۹ و a تا f سر و کار
+        داریم. حال ما در این سیستم قابلیت ترکیب رنگی سه رنگ اصلی یعنی Red
+        Green Blue یا قرمز سبز آبی را داریم.
+        <br />
+      </p>
+      <br />
+      <div id="code-editor">
+        <p>کود من</p>
+        <code>
+            &lt;&nbsp;DOCTYPE html&nbsp!&gt;
+            <br />
+            &lt;html&gt;
+            <br />
+            &lt;body&gt; <br />
+            &lt h1 style="color:#1f2f42"&gt  فیض الله همددرد&lt/h1&gt
+            <br />
+            &lt;/body&gt;<br />
+            &lt;/html&gt;
+          </code>
+      </div>
+      <br />
+      <br />
+
+      <h1 id="content-course-main-section-title">استفاده از RGB</h1>
+      <p>
+        در سیستم رنگ‌بندی RGB دقیقا همان فلسفه مورد قبلی پیاده‌سازی می‌شود، با
+        این تفاوت که سیستم عدد گذاری در این حالت متفاوت است. در این سیستم ما
+        از اعداد بین ۰ تا ۲۵۵ استفاده می‌کنیم. به مثال زیر برای تولید رنگ آبی
+        توجه کنید:
+        <br />
+        <b>میزان شفافیت</b>
+        در برخی سیستم‌های رنگ‌بندی ما می‌توانیم یک گزینه یا پارامتر دیگر را
+        نیز تنظیم کنید. این پارامتر میزان شفافیت یا Opaciy است. این مقدار عددی
+        بین ۰ تا ۱ است. این مقدار به صورت پیشفرض برابر با ۱ است اما می‌توانید
+        آن را تا حدی کاهش دهید که کاملا المان شما محو شود. برای مثال اگر این
+        مقدار برابر ۰ باشد هیچ چیزی در صفحه مشاهده نمی‌شود. برای اینکار نیاز
+        است که حرف a را به انتهای rgb اضافه کنید و همچنین یک مقدار چهارم در
+        پرانتز قرار دهید. به مثال زیر توجه کنید:
+        <br />
+        می‌توانید از مقادیر .۱, .۲, .۳ … .۹ استفاده کنید.
+      </p>
+      <br />
+      <div id="code-editor">
+        <p>کود من</p>
+        <code>
+          &lt;&nbsp;DOCTYPE html&nbsp!&gt;
+          <br />
+          &lt;html&gt;
+          <br />
+          &lt;body&gt; <br />
+          &lt h1 style="color:rgba(0, 0, 255,0);"&gt فیض الله همدرد&lt/h1&gt
+          <br />
+          &lt;/body&gt;<br />
+          &lt;/html&gt;
+        </code>
+      </div>
+      <br />
+      <br />
+      <div id="page-change-buttons">
+        <a href="html-links-page.html">پیش</a>
+        <a href="html-attributes-page.html">عقب</a>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>

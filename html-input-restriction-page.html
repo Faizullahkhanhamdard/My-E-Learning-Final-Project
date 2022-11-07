@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page - CSAcademy</title>
+  <link rel="stylesheet" href="asset/css/html-course-pages-style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <main id="content-course-main-section">
+      <h1 id="content-course-main-section-title">خاصیت‌های input</h1>
+      <p>
+        با چند خاصیت از تگ input آشنا شدیم. مقدار type و value را بررسی
+        نمودیم. اما چند مورد مهم دیگر نیز وجود دارد که باید به آن‌ها اشاره
+        شود.
+      </p>
+
+      <h2 id="content-course-main-section-title">Disabled</h2>
+      <p>این خاصیت باعث می‌شود تا یک ورودی غیرفعال شود:</p>
+      <div id="code-editor">
+        <p>کود من</p>
+        <code>
+            &lt !doctype html &gt; &lt html &gt;<br />
+            &lt head &gt; &lt title &gt;CSAcademy&lt /title &gt; &lt /head
+            &gt;<br />
+            &lt body &gt;<br />
+            &lt form &gt;<br>
+            &lt input type="radio" name="gender" value="Male" disabled &gt;Male <br>
+            &lt /form &gt; &lt /body &gt;<br />
+            &lt /html &gt;
+          </code>
+      </div>
+
+
+      <br />
+      <br />
+
+      <h2 id="content-course-main-section-title">Readonly</h2>
+      <p>این خاصیت باعث می‌شود تا یک ورودی برای ویرایش غیرقابل دسترس باشد.</p>
+      <div id="code-editor">
+        <p>کود من</p>
+        <code>
+            &lt !doctype html &gt; &lt html &gt;<br />
+            &lt head &gt; &lt title &gt;CSAcademy&lt /title &gt; &lt /head
+            &gt;<br />
+            &lt body &gt;<br />
+            &lt form &gt;<br>
+            Name: &lt input type="text" name="Name" value="Arastoo" readonly &gt;
+
+            &lt /form &gt; &lt /body &gt;<br />
+            &lt /html &gt;
+          </code>
+      </div>
+      <br />
+      <br />
+      <h2 id="content-course-main-section-title">maxlength</h2>
+      <p>
+        از این خاصیت به عنوان یک کنترل‌گر برای تعداد کاراکترهای مجاز در جهت
+        وارد کردن به یک ورودی استفاده می‌شود.
+      </p>
+      <div id="code-editor">
+        <p>کود من</p>
+        <code>
+            &lt !doctype html &gt; &lt html &gt;<br />
+            &lt head &gt; &lt title &gt;CSAcademy&lt /title &gt; &lt /head
+            &gt;<br />
+            &lt body &gt;<br />
+            &lt form &gt;<br>
+            Name: &lt input type="text" name="Name" maxlength="40"&gt;
+            &lt /form &gt; &lt /body &gt;<br />
+            &lt /html &gt;
+          </code>
+      </div>
+
+      <h2 id="content-course-main-section-title">size</h2>
+      <p>
+        این خاصیت باعث می‌شود تا میزان اندازه مربوط به فرم ورودی را تعیین
+        بکنید
+      </p>
+      <div id="code-editor">
+        <p>کود من</p>
+        <code>
+            &lt !doctype html &gt; &lt html &gt;<br />
+            &lt head &gt; &lt title &gt;CSAcademy&lt /title &gt; &lt /head
+            &gt;<br />
+            &lt body &gt;<br />
+            &lt form &gt;<br>
+            Name: &lt input type="text" name="Name" size="20" &gt; </code>
+        &lt /form &gt; &lt /body &gt;<br />
+        &lt /html &gt;
+        </code>
+      </div>
+      <ul>
+        • autocomplete
+        <br />
+        • autofocus
+        <br />
+        • form
+        <br />
+        • formaction
+        <br />
+        • formenctype
+        <br />
+        • formmethod
+        <br />
+        • formnovalidate
+        <br />
+        • formtarget
+        <br />
+        • height and width
+        <br />
+        • list
+        <br />
+        • min and max
+        <br />
+        • multiple
+        <br />
+        • pattern (regexp)
+        <br />
+        • placeholder
+        <br />
+        • required
+        <br />
+        • step
+        <br />
+      </ul>
+
+      <h2 id="content-course-main-section-title">تگ select</h2>
+      <p>
+        با استفاده از تگ Select می‌توانید یک لیست انتخاب شدنی را در داخل
+        فرم‌تان پیاده‌سازی بکنید:
+      </p>
+      <div id="code-editor">
+        <p>کود من</p>
+        <code>
+            <br />
+            &lt select name="UI"&gt; <br />
+            &lt option value="HTML"&gt;HTML&lt /option&gt;<br />
+            &lt option value="CSS"&gt;CSS&lt /option&gt;<br />
+            &lt option value="JS"&gt;Javascript&lt /option&gt;<br />
+            &lt /select &gt;
+          </code>
+      </div>
+      <br />
+      <br />
+
+      <h2 id="content-course-main-section-title">تگ textarea</h2>
+      <p>
+        با استفاده از تگ input می‌توانید یک ورودی یک خطی را ایجاد بکنید. اما
+        با استفاده از تگ textarea می‌توانید یک بلاک متنی ایجاد بکنید که کاربر
+        بدون محدودیت در آن می‌تواند متن خود را وارد بکند.
+      </p>
+      <div id="code-editor">
+        <p>کود من</p>
+        <code>
+            <br />
+            <br />
+            &lt textarea name="message" rows="10" cols="30"&gt;<br />
+            The cat was playing in the garden. <br />
+            &lt /textarea&gt;
+            <br />
+            <br />
+          </code>
+      </div>
+
+      <div class="quiz-wrapper">
+        <h1>سوالات HTML</h1>
+        <p class="quiz">سوال ۱۶:مشخصه disabled چه را مشخص می کند؟</p>
+        <form action="" class="options-wrapper">
+          <div class="single-option-wrapper">
+            <input type="radio" name="options" /><span>اینپوت را غیر فعال می کند.</span>
+          </div>
+          <div class="single-option-wrapper">
+            <input type="radio" name="options" /><span>اینپوت را فعال می کند.</span>
+          </div>
+        </form>
+      </div>
+
+      <div id="page-change-buttons">
+        <a href="html-5-elements-page.html">پیش</a>
+        <a href="html-input-type-page.html">عقب</a>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>

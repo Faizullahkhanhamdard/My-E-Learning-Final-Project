@@ -1,0 +1,438 @@
+/* -----------------------  Default Styles---------- */
+@font-face {
+  font-family: bahij2;
+  src:url(../bahij/Bahij1.ttf);
+ 
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:bahij2;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.title{
+    font-size: 2.3rem;
+    color:#254441;
+    text-align: center;
+}
+::placeholder{
+    color:#A9a9a9;
+    font-size: 16px;
+   }
+.link-btn{
+    color:white;
+    padding:5px 30px;
+   background-color: #254441;   
+}
+.link-btn:hover{
+    color:white;
+   background-color: #3a6b66;
+}
+/* ---------------------Wrapper Class------------ */
+
+.user-login-page-wrapper{
+    width:100%;
+    background-color: gray;
+}
+
+.bring-center{
+    text-align: center;
+}
+
+
+/* --------------------------user-login-page-navbar-section----------------- */
+.user-login-page-navbar{
+ display: flex;
+ background-color: #254441;
+ justify-content: space-between;
+ align-items: center;
+ padding: 0 20px;
+ height:8.6vh;
+}
+
+.user-login-page-logo-container a img{
+    width:100px;
+}
+
+
+
+/*---------- User login page sidebar section------------------- */
+
+.user-login-page-sidebar{ 
+  float:right;
+  width:20%;
+  /* height:90vh; */
+  padding:50px 0;
+  /* text-align: center; */
+  border-top:1px solid #A9a9a9;
+  border-bottom:1px solid #A9a9a9;
+  background-color: #254441; 
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+}
+
+.user-login-page-sidebar-bio-container{
+    width:inherit;
+    display: flex;
+    flex-direction:column ;  
+}
+.user-login-page-sidebar-bio-container{
+ width:80px;
+ margin-bottom: 10px;
+}
+.user-login-page-sidebar-bio-container a{
+    color:white;
+    font-size: 20px;
+}
+
+.user-login-page-sidebar-bio-container img{
+    width:80%;
+    height:60px;
+    border-radius: 50%;
+}
+.login-page-sidebar-username{
+    margin-bottom: 10px;
+}
+.login-page-sidebar-username a{
+    color:White;
+    font-size: 20px;
+}
+
+.user-login-page-sidebar-links-container{
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+.user-login-page-sidebar-links-container img{
+    width:60px;
+    padding: 0 10px;
+    border-radius: 50%;
+} 
+
+.user-login-page-sidebar-courses-and-certificate-container{
+width:250px;
+display: flex;
+text-align: center;
+padding: 20px 0;
+color:white;
+}
+
+.user-login-page-sidebar-courses-and-certificate-container a img{
+    width:40%;
+}
+
+.Courses,.Certificates{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;   
+}
+
+.user-login-page-sidebar-setting-and-mail-container{
+    width:250px;
+    display: flex;
+   text-align: center;
+}
+.Setting,.Mail{
+    display: flex;
+    flex-direction: column;
+    color:white;
+}
+
+.user-login-page-sidebar-setting-and-mail-container img{
+    width:40%;
+}
+/* -----------------------Main content----------- */
+
+.user-login-page-main-section{
+   width:80%;
+   /* height:90vh; */
+   padding-right: 40px;
+   float: right;
+
+}
+.user-login-page-main-section .courses-title{
+    text-align: center;
+    font-size: 2rem;
+    padding:5px 50px;
+    color:white; 
+}
+
+.user-login-page-main-content-navbar{
+width:400px;
+ list-style-type: none;
+ display: flex;
+ justify-content: space-between;
+ padding: 5px 20px 20px 0;
+}
+.user-login-page-main-content-navbar li a{
+   color:white;
+   font-size: 20px;
+  font-weight: bold;
+}
+.my-active-courses {
+  border-bottom: 2px solid white;
+}
+.user-login-page-main-content-navbar li a:hover{
+    border-bottom:2px solid white;
+}
+
+.user-login-page-cards-wrapper{
+ display: flex;
+}
+.user-login-page-courses{
+  width:230px;
+  margin-top: 30px;
+  margin-left: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
+  
+}
+.user-login-page-courses-content{
+    padding: 10px;
+}
+.user-login-page-courses-content h2{
+    text-align: center;
+}
+
+.user-login-page-courses-content a span{
+    color: white;
+    background-color: #254441;
+}
+.user-login-page-courses-content a span:hover{
+    background-color: #3a6b66;
+    
+}
+.user-login-page-courses-content span{
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+}
+.user-login-page-courses img{
+    width:100%;
+    height:140px;
+  
+}
+
+/*------------------ Responsiveness of right Side bar----------- */
+@media all and (max-width:1350px){
+
+    .login-page-sidebar-username{
+     display: none;
+    }
+}
+
+@media all and (max-width:940px){
+    .user-login-page-sidebar-links-container{
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+    }
+    .user-login-page-sidebar-courses-and-certificate-container,
+    .user-login-page-sidebar-setting-and-mail-container{
+      display: flex;
+      flex-direction: column;
+    }
+    .Courses,.Setting,.Certificates{
+        margin-bottom: 30px;
+    }
+    .user-login-page-main-content-navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .user-login-page-main-content-navbar li{
+       margin-bottom: 20px;
+    }
+    .user-login-page-cards-wrapper{
+        display: flex;
+        flex-direction: column;
+      align-items: center;
+     
+    }
+    .user-login-page-courses{
+        width:60%;
+        height:90%;
+    }
+   
+}
+
+
+/*------------------------ Footer Section------------------------- */
+.footer-container{
+    clear: both;
+    background-color:#254441;;
+    width:100%;
+    padding:40px 0 0 0;
+    position: relative;
+}
+
+footer{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+footer #footer-first-row{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+footer #footer-first-row input{
+    background: none;
+    border:none;
+    outline:none;
+    border:1px solid white;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding:0 100px;
+    color: white;
+}
+
+footer #footer-first-row a{
+    background-color: white;
+    color:#254441;
+    width:75%;
+    display: inline-block;
+    border-radius: 20px;
+    position: relative;
+    left: 15px;
+    text-align: center;
+    padding:1px;
+}
+
+footer #footer-second-row{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+#footer-third-row-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer-third-row #line-bar span{
+    display: block;
+    border: 1px solid white;
+}
+
+#footer-third-row-content p{
+ color:white;
+ font-size: 1.2rem;
+}
+
+/* Academy Part */
+#academy-part{
+    flex-basis: 35%;
+}
+/* Learnig Part */
+#learning-part{
+    flex-basis: 20%;
+}
+/* About part */
+#about-part{
+    flex-basis: 20%;
+}
+/* More part */
+#more-part{
+    flex-basis: 25%;
+}
+/* Heading 3 of footer */
+
+footer div h3{
+    padding-bottom: 10px;
+    font-size: 1.6rem;
+    color:white;
+}
+
+/* Paragrpahs  of footer */
+ footer div a{
+    padding-bottom:10px;
+    font-size: 1.2rem;
+    display: block;
+    color:white;
+}
+/* Link-container */
+
+.link-container{
+    display: flex;
+    width:inherit;
+}
+
+.link-container img{
+    width:60px;
+    padding: 10px;
+    background-color: #254441;
+    color:white;
+    border-radius: 50%;
+}
+
+/* -------------Footer Section resonsivness For max width 750px------- */
+
+ @media all and (max-width:750px){
+   
+    #footer-second-row{
+       display: flex;
+       flex-direction: column;
+    }
+    #footer-second-row h3{
+      font-size: 2.5rem;
+    }
+
+    #academy-part,#learning-part,#about-part,#more-part{
+      margin-bottom: 10px;
+
+    }
+  
+}
+
+
+  
+ @media all and (max-width: 880px) {
+    
+       #footer-second-row #academy-part{
+          flex-basis: 25%;
+          margin-left: 20px;
+       }
+       #footer-second-row #learning-part,#footer-second-row #about-part{
+        margin-left: 20px;
+       }
+       #footer-third-row-content{
+        display: flex;
+        flex-direction: column;
+       }
+       #footer-third-row-content p{
+        margin-bottom: 10px;
+        text-align: center;
+       }
+       #footer-first-row a{
+        font-size: 0;
+        
+       }
+       #footer-first-row a::before,
+       #footer-first-row a::after{
+        font-size: 18px;
+       }
+       #footer-first-row a::after{
+        content:'یوتیوب';
+       }
+       #footer-first-row input{
+         width:80px;
+       }
+     
+      }
+   
+
+  

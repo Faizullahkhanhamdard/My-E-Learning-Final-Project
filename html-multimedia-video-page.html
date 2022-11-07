@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page - CSAcademy</title>
+  <link rel="stylesheet" href="asset/css/html-course-pages-style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <main id="content-course-main-section">
+      <h1 id="content-course-main-section-title">ویدیو چیست؟</h1>
+      <p>
+        قبل از HTML5، یک ویدیو فقط در یک مرورگر با یک افزونه (مانند فلش) قابل
+        پخش بود. عنصر video HTML5 یک روش استاندارد برای جاسازی یک ویدیو در یک
+        صفحه وب را مشخص می کند.
+      </p>
+      <br />
+      <br />
+
+      <h1 id="content-course-main-section-title">چگونه کار می کند؟</h1>
+
+      <p>
+        ویژگی کنترل ها، کنترل های ویدئویی مانند پخش، مکث و صدا را اضافه می
+        کند. ایده خوبی است که همیشه ویژگی های عرض و ارتفاع را در نظر بگیرید.
+        اگر ارتفاع و عرض تنظیم نشده باشد، ممکن است صفحه هنگام بارگیری ویدیو
+        سوسو بزند. عنصر source به شما امکان می دهد فایل های ویدئویی جایگزینی
+        را که مرورگر ممکن است از بین آنها انتخاب کند، مشخص کنید. مرورگر از
+        اولین فرمت شناسایی شده استفاده خواهد کرد. متن بین تگ‌های video و video
+        فقط در مرورگرهایی نمایش داده می‌شود که از عنصر video پشتیبانی
+        نمی‌کنند.
+      </p>
+      <br />
+      <br />
+
+      <div id="code-editor">
+        <p>کود من</p>
+        <code>
+              &lt;!DOCTYPE html&gt; <br>
+              &lt;html&gt; <br>
+              &lt;body&gt;
+              <br>
+              &lt;video width="320" height="240" controls&gt;
+                &lt;source src="movie.mp4" type="video/mp4"&gt;<br>
+                &lt;source src="movie.ogg" type="video/ogg"&gt; <br>
+              Your browser does not support the video tag. <br>
+              &lt;/video>
+              
+              &lt;/body&gt; <br>
+              &lt;/html&gt;
+      
+          </code>
+      </div>
+
+      <div class="quiz-wrapper">
+        <h1>سوالات HTML</h1>
+        <p class="quiz">سوال ۲۰:کدام یکی از عناصر ‌ذیل مربوط به ویدیو است؟</p>
+        <form action="" class="options-wrapper">
+          <div class="single-option-wrapper">
+            <input type="radio" name="options" /><span>&lt movie &gt</span>
+          </div>
+          <div class="single-option-wrapper">
+            <input type="radio" name="options" /><span>&lt video &gt</span>
+          </div>
+          <div class="single-option-wrapper">
+            <input type="radio" name="options" /><span>&lt media &gt</span>
+          </div>
+        </form>
+      </div>
+      <div id="page-change-buttons">
+        <a href="html-multimedia-introduction-page.html">پیش</a>
+        <a href="html-multimedia-audio-page.html">عقب</a>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
